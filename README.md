@@ -34,6 +34,20 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 -   [] Listed all my technical skills, methodologies, and platforms related to my track, with my strongest skills at the top
 -   [] Does not include soft skills (teachable, communication, team player)
 
+#### Skills
+
+-   JavaScript
+-   Python
+-   React
+-   React Native
+-   CSS
+-   HTML
+-   Node
+-   SQL
+-   Git
+-   GitHub
+-   Next
+
 ### Projects Section
 
 -   [] Selected 3+ projects
