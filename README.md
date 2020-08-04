@@ -1,30 +1,80 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Cameron Hawley's Portfolio
 
-First, run the development server:
+## Requirements
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+### Text, Type, Format and Structure
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+-   [ ] Get custom domain name
+-   [ ] Build original website
+-   [ ] Every link is functional
+-   [ ] Responsive layout
+-   [ ] Navigation bar
+-   [ ] High resolution images
+-   [ ] Accent colors that complement each other
+-   [ ] Consistent alignment, text, margins, etc
+-   [ ] Consistent font sizes and style
+-   [ ] Header for each section that stands out
+-   [ ] Consistent period use
+-   [ ] Spell check
+-   [ ] Capitalization of languages, tools, and skills is consistent (JavaScript)
+-   [ ] Role titles/spelling are consistent (Full Stack)
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### About Me Section
 
-## Learn More
+-   [ ] Include full name
+-   [ ] Profile picture (professional)
+-   [ ] Mission statement
+-   [ ] Overview of who I am professionally and personally
+-   [ ] Listed my title (Full Stack Web Developer)
 
-To learn more about Next.js, take a look at the following resources:
+### Skills Section
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+-   [ ] Listed all my technical skills, methodologies, and platforms related to my track, with my strongest skills at the top
+-   [ ] Does not include soft skills (teachable, communication, team player)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+#### Skills
 
-## Deploy on Vercel
+-   JavaScript
+-   Python
+-   React
+-   React Native
+-   CSS
+-   HTML
+-   Node
+-   SQL
+-   Git
+-   GitHub
+-   Next
+-   Jest
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Projects Section
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+-   [ ] Selected 3+ projects
+-   [ ] Labled the section header as "Projects"
+-   [ ] Listed the title for each of the projects
+-   [ ] Linked to the deployed project (hyperlinked to the title)
+-   [ ] Linked to a GitHub repo
+-   [ ] Included at least one sentence to describe the project
+-   [ ] Clearly listed the tech stack used for each project
+-   [ ] Listed bullet points to highlight my responsibilities, how the technology was used, and unique accomplishments when working on the project
+-   [ ] Listed responsibilities in bullet point format and not paragraph format
+-   [ ] Started each bullet point with an action verb and did not use phrases such as:
+    -   Assisted with
+    -   Worked on
+    -   Helped with
+-   [ ] Did not use the words "capstone", "Lambda Labs", or "School" project
+-   [ ] Optional: Listed the dates of development
+
+### Contact Section
+
+-   [ ] Listed a professional email address
+-   [ ] Linked my GitHub
+-   [ ] Linked my LinkedIn
+-   [ ] Linked to social media if relevant
+
+## Future Plans
+
+-   [ ] Create a back-end
+-   [ ] Dark mode
