@@ -24,10 +24,10 @@ export default function Hero() {
                     maxWidth="600px"
                     width={{ _: "100%", md: "60%" }}
                 >
-                    <h1>
+                    <Box as="h1" fontSize={{ _: "2rem", md: "2.6rem" }} mb={20}>
                         Hello! My name is Cameron Hawley. I'm a full stack web
                         developer
-                    </h1>
+                    </Box>
                     <p>
                         Something something about me. I am Cam. I do coding and
                         I love it. I would love to work with and or for you!
@@ -39,7 +39,7 @@ export default function Hero() {
     );
 }
 
-const HeroStyled = styled.div`
+const HeroStyled = styled.section`
     width: 100%;
     margin-top: 32px;
 
@@ -48,11 +48,6 @@ const HeroStyled = styled.div`
         width: auto;
         max-width: 350px;
         display: block;
-    }
-
-    h1 {
-        font-size: 2.6rem;
-        margin-bottom: 1.2rem;
     }
 
     p {

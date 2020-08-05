@@ -9,7 +9,7 @@ export default function Home() {
         <Layout>
             <Box variant="container">
                 <Hero />
-                <div style={{}}>
+                <div>
                     <section>
                         <h2>Projects</h2>
                     </section>
