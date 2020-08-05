@@ -16,9 +16,11 @@ export default function Layout(props) {
 
 const MainStyled = styled.main`
     min-height: 90vh;
-    padding: 0 0.5rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding: 0 1rem;
+    margin: 3rem auto 6rem;
+    max-width: 1200px;
+    /* justify-content: center; */
+    /* align-items: center; */
 `;
