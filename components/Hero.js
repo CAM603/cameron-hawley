@@ -1,47 +1,65 @@
 // Styles
 import styled from "@emotion/styled";
+import { Flex, Box } from "reflexbox";
 
 export default function Hero() {
     return (
         <HeroStyled>
-            <div className="image">
-                <p>My Picture</p>
-            </div>
-            <div className="intro">
-                <h1>
-                    Hello! My name is Cameron Hawley. I'm a full stack web
-                    developer
-                </h1>
-                <p>
-                    Something something about me. I am Cam. I do coding and I
-                    love it. I would love to work with and or for you!
-                </p>
-                <button>Contact me</button>
-            </div>
+            <Flex
+                justifyContent="space-between"
+                alignItems={{ _: "flex-start", md: "center" }}
+                flexDirection={{ _: "column", md: "row" }}
+            >
+                <Box
+                    width={{ _: "200px", md: "250px", lg: "350px" }}
+                    height={{ _: "200px", md: "250px", lg: "350px" }}
+                    as="div"
+                    bg="black"
+                >
+                    {/* <img src="" alt="cameron" /> */}
+                </Box>
+                <Box
+                    as="div"
+                    my={20}
+                    maxWidth="600px"
+                    width={{ _: "100%", md: "60%" }}
+                >
+                    <h1>
+                        Hello! My name is Cameron Hawley. I'm a full stack web
+                        developer
+                    </h1>
+                    <p>
+                        Something something about me. I am Cam. I do coding and
+                        I love it. I would love to work with and or for you!
+                    </p>
+                    <button>Contact me</button>
+                </Box>
+            </Flex>
         </HeroStyled>
     );
 }
 
 const HeroStyled = styled.div`
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     width: 100%;
+    margin-top: 32px;
 
-    .intro {
-        max-width: 500px;
+    img {
+        height: auto;
+        width: auto;
+        max-width: 350px;
+        display: block;
+    }
 
-        h1 {
-            font-size: 2.6rem;
-            margin-bottom: 1.2rem;
-        }
+    h1 {
+        font-size: 2.6rem;
+        margin-bottom: 1.2rem;
+    }
 
-        p {
-            font-size: 1.2rem;
-            line-height: 1.5;
-        }
-        button {
-            margin-top: 20px;
-        }
+    p {
+        font-size: 1.2rem;
+        line-height: 1.5;
+    }
+    button {
+        margin-top: 20px;
     }
 `;
