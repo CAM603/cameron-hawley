@@ -12,10 +12,12 @@ export default {
         accent: "#000000",
     },
     variants: {
-        maxWidth: 1200,
-        width: "100%",
-        mx: "auto",
-        px: 30,
+        container: {
+            maxWidth: 1200,
+            width: "100%",
+            mx: "auto",
+            px: 30,
+        },
     },
     breakpoints,
 };

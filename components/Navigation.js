@@ -12,7 +12,7 @@ export default function Navigation() {
     );
 }
 
-const NavigationStyled = styled.div`
+const NavigationStyled = styled.nav`
     ul {
         list-style-type: none;
         display: flex;
