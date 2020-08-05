@@ -1,11 +1,16 @@
 // import "../styles/globals.css";
+// Styles
 import GlobalStyles from "../components/GlobalStyles/GlobalStyles";
+import { ThemeProvider } from "emotion-theming";
+import theme from "../theme/theme";
 
 function MyApp({ Component, pageProps }) {
     return (
         <>
-            <GlobalStyles />
-            <Component {...pageProps} />
+            <ThemeProvider theme={theme}>
+                <GlobalStyles />
+                <Component {...pageProps} />
+            </ThemeProvider>
         </>
     );
 }
