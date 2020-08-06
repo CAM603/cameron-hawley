@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 import { Box, Flex } from "reflexbox";
+import icons from "./icons";
 
 export default function Skills() {
     return (
@@ -18,7 +19,9 @@ export default function Skills() {
                         flexDirection={{ _: "row", md: "row" }}
                         flexWrap="wrap"
                     >
-                        <div>Icons here</div>
+                        {icons.map((icon) => (
+                            <Box variant="icon">{icon}</Box>
+                        ))}
                     </Flex>
                 </Box>
             </Flex>

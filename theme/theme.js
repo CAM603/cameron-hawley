@@ -27,6 +27,11 @@ export default {
             borderRadius: "14px",
             margin: "20px 0",
             boxShadow: "rgba(0, 0, 0, 0.15) 0px 2px 6px",
+            padding: "20px",
+        },
+        icon: {
+            width: "66px",
+            height: "66px",
         },
     },
     breakpoints,
