@@ -41,7 +41,7 @@ export default function Hero() {
 
 const HeroStyled = styled.section`
     width: 100%;
-    margin-top: 32px;
+    margin: 32px 0;
 
     img {
         height: auto;

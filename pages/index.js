@@ -4,6 +4,8 @@ import { Flex, Box } from "reflexbox";
 import Layout from "../components/layout/layout";
 import Hero from "../components/Hero";
 import Skills from "../components/Skills";
+import Projects from "../components/Projects";
+import Contact from "../components/Contact";
 
 export default function Home() {
     return (
@@ -11,13 +13,9 @@ export default function Home() {
             <Box variant="container">
                 <Hero />
                 <div>
-                    <section>
-                        <h2>Projects</h2>
-                    </section>
+                    <Projects />
                     <Skills />
-                    <section>
-                        <h2>Contact</h2>
-                    </section>
+                    <Contact />
                 </div>
             </Box>
         </Layout>

@@ -8,7 +8,7 @@ breakpoints.xxl = breakpoints[4];
 
 export default {
     colors: {
-        primary: "#ff0000",
+        primary: "#2ECC71",
         accent: "#000000",
     },
     variants: {
