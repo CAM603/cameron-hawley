@@ -18,6 +18,16 @@ export default {
             mx: "auto",
             px: 30,
         },
+        title: {
+            fontSize: "2.2rem",
+            borderBottom: "1px solid grey",
+        },
+        card: {
+            border: "solid black rgb(234, 234, 234)",
+            borderRadius: "14px",
+            margin: "20px 0",
+            boxShadow: "rgba(0, 0, 0, 0.15) 0px 2px 6px",
+        },
     },
     breakpoints,
 };
