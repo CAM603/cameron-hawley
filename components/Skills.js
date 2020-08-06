@@ -4,7 +4,11 @@ import { Box, Flex } from "reflexbox";
 export default function Skills() {
     return (
         <SkillsStyled>
-            <Box as="h2" variant="title">
+            <Box
+                as="h2"
+                variant="title"
+                fontSize={{ _: "1.6rem", md: "2.2rem" }}
+            >
                 Skills
             </Box>
             <Flex justifyContent="center">

@@ -4,7 +4,11 @@ import { Flex, Box } from "reflexbox";
 export default function Projects() {
     return (
         <ProjectsStyled>
-            <Box as="h2" variant="title">
+            <Box
+                as="h2"
+                variant="title"
+                fontSize={{ _: "1.6rem", md: "2.2rem" }}
+            >
                 Projects
             </Box>
             <Flex flexDirection="column">
