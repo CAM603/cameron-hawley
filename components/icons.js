@@ -6,8 +6,15 @@ const ImageStyled = styled.img`
 `;
 
 const icons = [
-    <ImageStyled src="/images/html.png" alt="html5" />,
-    <ImageStyled src="/images/css.png" alt="css" />,
+    { image: <ImageStyled src="/images/html.png" alt="html5" />, id: 1 },
+    { image: <ImageStyled src="/images/css.png" alt="css" />, id: 2 },
+    {
+        image: <ImageStyled src="/images/javascript.png" alt="javascript" />,
+        id: 3,
+    },
+    { image: <ImageStyled src="/images/python.png" alt="python" />, id: 4 },
+    { image: <ImageStyled src="/images/react.png" alt="react" />, id: 5 },
+    { image: <ImageStyled src="/images/node.png" alt="node" />, id: 6 },
 ];
 
 export default icons;
