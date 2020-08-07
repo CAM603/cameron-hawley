@@ -11,17 +11,27 @@ export default function Hero() {
                 flexDirection={{ _: "column", md: "row" }}
             >
                 <Box
-                    width={{ _: "200px", md: "250px", lg: "350px" }}
-                    height={{ _: "200px", md: "250px", lg: "350px" }}
+                    width={{
+                        _: "200px",
+                        md: "250px",
+                        lg: "300px",
+                        xl: "350px",
+                    }}
+                    height={{
+                        _: "200px",
+                        md: "250px",
+                        lg: "300px",
+                        xl: "350px",
+                    }}
                     as="div"
-                    bg="black"
                 >
-                    {/* <img src="" alt="cameron" /> */}
+                    <img src="/images/profile.jpeg" alt="cameron" />
                 </Box>
                 <Box
                     as="div"
                     my={20}
-                    maxWidth="600px"
+                    pl={{ _: "0", md: "20px" }}
+                    maxWidth="700px"
                     width={{ _: "100%", md: "60%" }}
                 >
                     <Box as="h1" fontSize={{ _: "2rem", md: "2.6rem" }} mb={20}>
@@ -41,13 +51,11 @@ export default function Hero() {
 
 const HeroStyled = styled.section`
     width: 100%;
-    margin: 32px 0;
+    margin: 42px 0;
 
     img {
-        height: auto;
-        width: auto;
-        max-width: 350px;
-        display: block;
+        border-radius: 14px;
+        height: 100%;
     }
 
     p {

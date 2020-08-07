@@ -1,5 +1,8 @@
+// Styles
 import styled from "@emotion/styled";
 import { Box, Flex } from "reflexbox";
+// Assets
+import { socials } from "./icons";
 
 export default function Contact() {
     return (
@@ -11,10 +14,12 @@ export default function Contact() {
             >
                 Contact
             </Box>
-            <Flex justifyContent="space-around">
-                <Box p={10}>Email</Box>
-                <Box p={10}>GitHub</Box>
-                <Box p={10}>LinkedIn</Box>
+            <Flex justifyContent="center">
+                {socials.map((icon) => (
+                    <Box key={icon.id} variant="iconContact">
+                        {icon.icon}
+                    </Box>
+                ))}
             </Flex>
         </ContactStyled>
     );

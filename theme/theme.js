@@ -20,7 +20,9 @@ export default {
         },
         title: {
             fontSize: "2.2rem",
-            borderBottom: "1px solid grey",
+            borderBottom: "1px solid rgba(0, 0, 0, 0.15)",
+            fontWeight: "bold",
+            margin: "20px 0",
         },
         card: {
             border: "solid black rgb(234, 234, 234)",
@@ -32,6 +34,12 @@ export default {
         icon: {
             width: "66px",
             height: "66px",
+            margin: "0 20px",
+        },
+        iconContact: {
+            width: "44px",
+            height: "44px",
+            margin: "0 20px",
         },
     },
     breakpoints,

@@ -6,7 +6,7 @@ export default function Header() {
         <HeaderStyled>
             <div className="container">
                 <div>
-                    <h1>Logo</h1>
+                    <h1>Cameron Hawley</h1>
                 </div>
                 <Navigation />
             </div>
@@ -16,7 +16,7 @@ export default function Header() {
 
 const HeaderStyled = styled.header`
     background-color: ${(props) => props.theme.colors.primary};
-    padding: 20px;
+    padding: 30px 20px;
     display: flex;
     justify-content: center;
 
@@ -25,5 +25,10 @@ const HeaderStyled = styled.header`
         max-width: 1200px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
+
+        h1 {
+            font-size: 2rem;
+        }
     }
 `;

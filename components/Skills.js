@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import { Box, Flex } from "reflexbox";
-import icons from "./icons";
+import { icons } from "./icons";
 
 export default function Skills() {
     return (
@@ -15,12 +15,14 @@ export default function Skills() {
             <Flex justifyContent="center">
                 <Box width="90%" variant="card">
                     <Flex
-                        justifyContent="space-between"
+                        justifyContent="space-around"
                         flexDirection={{ _: "row", md: "row" }}
                         flexWrap="wrap"
                     >
                         {icons.map((icon) => (
-                            <Box variant="icon">{icon}</Box>
+                            <Box key={icon.id} variant="icon">
+                                {icon.icon}
+                            </Box>
                         ))}
                     </Flex>
                 </Box>

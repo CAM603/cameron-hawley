@@ -18,7 +18,9 @@ const NavigationStyled = styled.nav`
         display: flex;
 
         li {
-            margin-left: 10px;
+            margin-left: 15px;
+            font-size: 1.5rem;
+            color: white;
         }
     }
 `;
