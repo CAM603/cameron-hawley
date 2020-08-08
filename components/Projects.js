@@ -1,6 +1,10 @@
+// Styles
 import styled from "@emotion/styled";
 import { Flex, Box } from "reflexbox";
+// Components
 import Card from "./Card";
+// Utils
+import projects from "../utils/projects";
 
 export default function Projects() {
     return (
@@ -13,15 +17,11 @@ export default function Projects() {
                 Projects
             </Box>
             <Flex flexDirection="column">
-                <Box p={20} variant="card">
-                    <Card />
-                </Box>
-                <Box p={20} variant="card">
-                    <Card />
-                </Box>
-                <Box p={20} variant="card">
-                    <Card />
-                </Box>
+                {projects.map((project) => (
+                    <Box p={20} variant="card">
+                        <Card project={project} />
+                    </Box>
+                ))}
             </Flex>
         </ProjectsStyled>
     );

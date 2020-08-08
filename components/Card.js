@@ -2,10 +2,10 @@
 import styled from "@emotion/styled";
 import { Box, Flex } from "reflexbox";
 
-export default function Card() {
+export default function Card({ project }) {
     return (
         <CardStyled>
-            <h3>Name</h3>
+            <h3>{project.name}</h3>
             <Box variant="project">
                 <Flex
                     justifyContent={{ _: "space-between", md: "space-between" }}
@@ -32,8 +32,9 @@ export default function Card() {
                 alignItems={{ _: "center", md: "" }}
                 width="100%"
             >
-                <p>JavaScript</p>
-                <p>CSS</p>
+                {project.tools.map((tool) => (
+                    <p key={tool}>{tool}</p>
+                ))}
             </Flex>
         </CardStyled>
     );
