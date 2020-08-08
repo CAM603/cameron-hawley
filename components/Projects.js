@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 import { Flex, Box } from "reflexbox";
+import Card from "./Card";
 
 export default function Projects() {
     return (
@@ -13,13 +14,13 @@ export default function Projects() {
             </Box>
             <Flex flexDirection="column">
                 <Box p={20} variant="card">
-                    Cool project1
+                    <Card />
                 </Box>
                 <Box p={20} variant="card">
-                    Cool project2
+                    <Card />
                 </Box>
                 <Box p={20} variant="card">
-                    Cool project3
+                    <Card />
                 </Box>
             </Flex>
         </ProjectsStyled>

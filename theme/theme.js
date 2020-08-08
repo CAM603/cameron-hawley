@@ -41,6 +41,11 @@ export default {
             height: "44px",
             margin: "0 20px",
         },
+        project: {
+            border: "solid black 1px",
+            width: "100%",
+            height: "250px", // For debugging
+        },
     },
     breakpoints,
 };
