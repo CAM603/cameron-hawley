@@ -42,9 +42,10 @@ export default {
             margin: "0 20px",
         },
         project: {
-            width: "100%",
             margin: "20px 0",
-            borderBottom: "1px solid black",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
         },
     },
     breakpoints,
