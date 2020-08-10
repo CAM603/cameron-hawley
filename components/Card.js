@@ -60,6 +60,7 @@ const CardStyled = styled.div`
         text-decoration: underline;
         margin-bottom: 20px;
         font-weight: bold;
+        text-align: center;
     }
 
     img {
