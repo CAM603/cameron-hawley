@@ -18,7 +18,7 @@ export default function Projects() {
             </Box>
             <Flex flexDirection="column">
                 {projects.map((project) => (
-                    <Box p={20} variant="card">
+                    <Box key={project.name} p={20} variant="card">
                         <Card project={project} />
                     </Box>
                 ))}

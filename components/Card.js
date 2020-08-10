@@ -20,12 +20,33 @@ export default function Card({ project }) {
                             justifyContent={{ _: "space-around", md: "center" }}
                             alignItems={{ _: "center", md: "flex-end" }}
                         >
-                            <p>Github</p>
-                            <p>Link</p>
+                            <Box
+                                width={{ _: "30px", md: "50px" }}
+                                height={{ _: "30px", md: "50px" }}
+                            >
+                                <a href={project.github} target="_blank">
+                                    <img
+                                        src="/images/github2.png"
+                                        alt="github link"
+                                    />
+                                </a>
+                            </Box>
+                            <Box
+                                width={{ _: "30px", md: "50px" }}
+                                height={{ _: "30px", md: "50px" }}
+                            >
+                                <a href={project.link} target="_blank">
+                                    <img
+                                        src="/images/link3.png"
+                                        alt="deployed link"
+                                    />
+                                </a>
+                            </Box>
                         </Flex>
                     </Box>
                 </Flex>
             </Box>
+            <h4>{project.description}</h4>
             <Flex
                 flexDirection={{ _: "column", md: "row" }}
                 justifyContent={{ _: "center", md: "space-around" }}
@@ -47,5 +68,10 @@ const CardStyled = styled.div`
 
     h3 {
         font-size: 1.5rem;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
     }
 `;
