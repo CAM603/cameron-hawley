@@ -10,7 +10,8 @@ export default function Header() {
             <Flex
                 className="container"
                 flexDirection={{ _: "column", md: "row" }}
-                justifyContent={{ _: "space-around", md: "space-between" }}
+                justifyContent={{ _: "space-between", md: "space-between" }}
+                height={{ _: "100%", sm: "80px" }}
             >
                 <h1>Cameron Hawley</h1>
                 <Navigation />
@@ -21,20 +22,20 @@ export default function Header() {
 
 const HeaderStyled = styled.header`
     background-color: ${(props) => props.theme.colors.primary};
-    height: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding: 0 20px;
 
     .container {
         width: 100%;
         max-width: 1200px;
         align-items: center;
-        height: 100%;
 
         h1 {
             font-size: 2.2rem;
+            text-align: center;
         }
     }
 `;
