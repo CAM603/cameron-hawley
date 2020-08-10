@@ -17,7 +17,7 @@ const projects = [
     },
     {
         name: "Hawley Communications",
-        image: "path",
+        image: null,
         description:
             "Developing a full stack website for marketing company to establish new branding",
         github: "href",
