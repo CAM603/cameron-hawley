@@ -42,9 +42,9 @@ export default {
             margin: "0 20px",
         },
         project: {
-            border: "solid black 1px",
             width: "100%",
-            height: "250px", // For debugging
+            margin: "20px 0",
+            borderBottom: "1px solid black",
         },
     },
     breakpoints,

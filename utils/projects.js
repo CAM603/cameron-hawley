@@ -1,11 +1,11 @@
 const projects = [
     {
         name: "Vanilla Calculator",
-        image: "path",
+        image: "/images/calculator.png",
         description: "Calculator made with JavaScript, HTML, and CSS with LESS",
         github: "https://github.com/CAM603/Calculator",
         link: "https://cam603.github.io/Calculator/",
-        tools: ["JavaScript", "CSS"],
+        tools: ["JavaScript", "HTML", "CSS", "LESS"],
     },
     {
         name: "Game of Life",
