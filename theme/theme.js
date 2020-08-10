@@ -46,6 +46,7 @@ export default {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
+            width: "100%",
         },
     },
     breakpoints,

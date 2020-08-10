@@ -8,12 +8,10 @@ export default function Card({ project }) {
             <h3>{project.name}</h3>
             <p>{project.description}</p>
             <Box variant="project">
-                <Box
-                    width={{ _: "250px", md: "300px" }}
-                    height={{ _: "250px", md: "300px" }}
-                >
-                    <img src={project.image} alt={project.name} />
-                </Box>
+                <div
+                    className="image"
+                    style={{ backgroundImage: `url(${project.image})` }}
+                ></div>
                 <div className="links">
                     <Box
                         width={{ _: "35px", md: "50px" }}
@@ -62,7 +60,13 @@ const CardStyled = styled.div`
         font-weight: bold;
         text-align: center;
     }
-
+    .image {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 300px;
+    }
     img {
         width: 100%;
         height: 100%;
