@@ -41,6 +41,12 @@ export default {
             height: "44px",
             margin: "0 20px",
         },
+        project: {
+            margin: "20px 0",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+        },
     },
     breakpoints,
 };
