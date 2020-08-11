@@ -10,7 +10,7 @@ const projects = [
     {
         name: "Game of Life",
         image: "/images/life.png",
-        description: "My interpretation of Eric Conway's Game of Life",
+        description: "My interpretation of John Conway's Game of Life",
         github: "https://github.com/CAM603/game-of-life",
         link: "https://game-of-life-black.vercel.app/",
         tools: ["JavaScript", "SCSS", "React"],
