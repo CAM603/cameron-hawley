@@ -1,6 +1,7 @@
 // Styles
 import styled from "@emotion/styled";
 import { Flex, Box } from "reflexbox";
+import Link from "next/link";
 
 export default function Hero() {
     return (
@@ -33,14 +34,27 @@ export default function Hero() {
                     width={{ _: "100%", md: "60%" }}
                 >
                     <Box as="h1" fontSize={{ _: "2rem", md: "2.6rem" }} mb={20}>
-                        Hello! My name is Cameron Hawley. I'm a full stack web
-                        developer
+                        Welcome! My name is Cameron Hawley. I'm a full stack web
+                        developer, open to work.
                     </Box>
                     <p>
-                        Something something about me. I am Cam. I do coding and
-                        I love it. I would love to work with and or for you!
+                        In October 2019 I was accepted to{" "}
+                        <a
+                            href="https://lambdaschool.com/courses/full-stack-web-development"
+                            target="_blank"
+                        >
+                            Lambda School's
+                        </a>{" "}
+                        Full Stack Web Development and Computer Science program.
+                        The following is a small collection of work that I
+                        completed during my time at Lambda. Read more{" "}
+                        <Link href="/about">
+                            <a>about me.</a>
+                        </Link>
                     </p>
-                    <button>Contact me</button>
+                    <a href="mailto:cameronhawley@comcast.net">
+                        <button>Contact me</button>
+                    </a>
                 </Box>
             </Flex>
         </HeroStyled>
@@ -62,5 +76,9 @@ const HeroStyled = styled.section`
     }
     button {
         margin-top: 20px;
+    }
+    a {
+        font-weight: bold;
+        text-decoration: underline;
     }
 `;

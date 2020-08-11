@@ -15,13 +15,26 @@ const icons = [
     { icon: <ImageStyled src="/images/python.png" alt="python" />, id: 4 },
     { icon: <ImageStyled src="/images/react.png" alt="react" />, id: 5 },
     { icon: <ImageStyled src="/images/node.png" alt="node" />, id: 6 },
+    { icon: <ImageStyled src="/images/postgres.png" alt="postgres" />, id: 7 },
 ];
 
 const socials = [
-    { icon: <ImageStyled src="/images/email.png" alt="email" />, id: 1 },
-    { icon: <ImageStyled src="/images/github.png" alt="github" />, id: 2 },
+    {
+        icon: <ImageStyled src="/images/email.png" alt="email" />,
+        name: "Email",
+        link: "mailto:cameronhawley@comcast.net",
+        id: 1,
+    },
+    {
+        icon: <ImageStyled src="/images/github2.png" alt="github" />,
+        link: "https://github.com/CAM603",
+        name: "GitHub",
+        id: 2,
+    },
     {
         icon: <ImageStyled src="/images/linkedin.png" alt="linkedin" />,
+        link: "https://www.linkedin.com/in/cameron-hawley/",
+        name: "LinkedIn",
         id: 3,
     },
 ];

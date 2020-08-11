@@ -10,25 +10,28 @@ export default function Skills() {
                 variant="title"
                 fontSize={{ _: "1.6rem", md: "2.2rem" }}
             >
-                Skills
+                Core Technologies
             </Box>
-            <Flex justifyContent="center">
-                <Box width="90%" variant="card">
-                    <Flex
-                        justifyContent="space-around"
-                        flexDirection={{ _: "row", md: "row" }}
-                        flexWrap="wrap"
-                    >
-                        {icons.map((icon) => (
-                            <Box key={icon.id} variant="icon">
-                                {icon.icon}
-                            </Box>
-                        ))}
-                    </Flex>
-                </Box>
-            </Flex>
+
+            <Box width="90%" variant="card">
+                <Flex
+                    justifyContent="space-around"
+                    flexDirection={{ _: "row", md: "row" }}
+                    flexWrap="wrap"
+                >
+                    {icons.map((icon) => (
+                        <Box key={icon.id} variant="icon">
+                            {icon.icon}
+                        </Box>
+                    ))}
+                </Flex>
+            </Box>
         </SkillsStyled>
     );
 }
 
-const SkillsStyled = styled.section``;
+const SkillsStyled = styled.section`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`;

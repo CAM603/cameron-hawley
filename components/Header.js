@@ -10,7 +10,7 @@ export default function Header() {
         <HeaderStyled>
             <Flex
                 className="container"
-                flexDirection={{ _: "column", md: "row" }}
+                flexDirection={{ _: "column", sm: "row" }}
                 justifyContent={{ _: "space-between", md: "space-between" }}
                 height={{ _: "100%", sm: "80px" }}
             >
@@ -39,7 +39,7 @@ const HeaderStyled = styled.header`
         align-items: center;
 
         h1 {
-            font-size: 2.2rem;
+            font-size: 2rem;
             text-align: center;
         }
     }

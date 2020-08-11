@@ -15,16 +15,6 @@ export default function Navigation() {
                         <a>About</a>
                     </Link>
                 </li>
-                <li>
-                    <Link href="/#contact">
-                        <a>Contact</a>
-                    </Link>
-                </li>
-                <li>
-                    <Link href="/#projects">
-                        <a>Projects</a>
-                    </Link>
-                </li>
             </Flex>
         </NavigationStyled>
     );

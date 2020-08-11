@@ -16,9 +16,11 @@ export default function Contact() {
             </Box>
             <div className="icons">
                 {socials.map((icon) => (
-                    <Box key={icon.id} variant="iconContact">
-                        {icon.icon}
-                    </Box>
+                    <a href={icon.link} target="_blank">
+                        <Box key={icon.id} variant="iconContact">
+                            {icon.icon}
+                        </Box>
+                    </a>
                 ))}
             </div>
         </ContactStyled>

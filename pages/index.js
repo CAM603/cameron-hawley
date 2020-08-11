@@ -12,8 +12,8 @@ export default function Home() {
         <Layout>
             <Hero />
             <div>
-                <Projects />
                 <Skills />
+                <Projects />
                 <Contact />
             </div>
         </Layout>
