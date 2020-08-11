@@ -23,6 +23,7 @@ export default {
             borderBottom: "1px solid rgba(0, 0, 0, 0.15)",
             fontWeight: "bold",
             margin: "20px 0",
+            width: "100%",
         },
         card: {
             border: "solid black rgb(234, 234, 234)",
@@ -39,13 +40,13 @@ export default {
         iconContact: {
             width: "44px",
             height: "44px",
-            margin: "0 20px",
         },
         project: {
             margin: "20px 0",
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
+            width: "100%",
         },
     },
     breakpoints,

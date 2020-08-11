@@ -3,17 +3,20 @@ import styled from "@emotion/styled";
 import { Box, Flex } from "reflexbox";
 
 export default function Card({ project }) {
+    const backgroundImage = project.image ? (
+        <div
+            className="image"
+            style={{ backgroundImage: `url(${project.image})` }}
+        ></div>
+    ) : (
+        <div className="no-image">In Development</div>
+    );
     return (
         <CardStyled>
             <h3>{project.name}</h3>
             <p>{project.description}</p>
             <Box variant="project">
-                <Box
-                    width={{ _: "250px", md: "300px" }}
-                    height={{ _: "250px", md: "300px" }}
-                >
-                    <img src={project.image} alt={project.name} />
-                </Box>
+                {backgroundImage}
                 <div className="links">
                     <Box
                         width={{ _: "35px", md: "50px" }}
@@ -60,8 +63,24 @@ const CardStyled = styled.div`
         text-decoration: underline;
         margin-bottom: 20px;
         font-weight: bold;
+        text-align: center;
     }
-
+    .image {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 300px;
+    }
+    .no-image {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        background-color: grey;
+    }
     img {
         width: 100%;
         height: 100%;

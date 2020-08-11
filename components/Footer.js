@@ -16,15 +16,15 @@ export default function Footer() {
 
 const FooterStyled = styled.footer`
     background-color: ${(props) => props.theme.colors.primary};
-    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
-    padding: 60px 30px;
+    margin-top: 20px;
+    padding: 30px 10px;
 
     p {
         line-height: 1.5;
+        text-align: center;
     }
 `;

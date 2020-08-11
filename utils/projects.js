@@ -1,7 +1,7 @@
 const projects = [
     {
         name: "Vanilla Calculator",
-        image: "/images/calculator.png",
+        image: "/images/calc.png",
         description: "Calculator made with JavaScript, HTML, and CSS with LESS",
         github: "https://github.com/CAM603/Calculator",
         link: "https://cam603.github.io/Calculator/",
@@ -9,7 +9,7 @@ const projects = [
     },
     {
         name: "Game of Life",
-        image: "path",
+        image: "/images/life.png",
         description: "My interpretation of Eric Conway's Game of Life",
         github: "https://github.com/CAM603/game-of-life",
         link: "https://game-of-life-black.vercel.app/",
@@ -17,7 +17,7 @@ const projects = [
     },
     {
         name: "Hawley Communications",
-        image: "path",
+        image: null,
         description:
             "Developing a full stack website for marketing company to establish new branding",
         github: "href",

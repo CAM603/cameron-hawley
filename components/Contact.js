@@ -14,15 +14,27 @@ export default function Contact() {
             >
                 Contact
             </Box>
-            <Flex justifyContent="center">
+            <div className="icons">
                 {socials.map((icon) => (
                     <Box key={icon.id} variant="iconContact">
                         {icon.icon}
                     </Box>
                 ))}
-            </Flex>
+            </div>
         </ContactStyled>
     );
 }
 
-const ContactStyled = styled.section``;
+const ContactStyled = styled.section`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    .icons {
+        width: 100%;
+        max-width: 500px;
+        display: flex;
+        justify-content: space-around;
+    }
+`;
