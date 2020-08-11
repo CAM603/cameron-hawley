@@ -3,6 +3,7 @@ import styled from "@emotion/styled";
 import { Box, Flex } from "reflexbox";
 // Components
 import Navigation from "./Navigation";
+import Link from "next/link";
 
 export default function Header() {
     return (
@@ -13,7 +14,11 @@ export default function Header() {
                 justifyContent={{ _: "space-between", md: "space-between" }}
                 height={{ _: "100%", sm: "80px" }}
             >
-                <h1>Cameron Hawley</h1>
+                <Link href="/">
+                    <a>
+                        <h1>Cameron Hawley</h1>
+                    </a>
+                </Link>
                 <Navigation />
             </Flex>
         </HeaderStyled>

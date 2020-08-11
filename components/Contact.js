@@ -6,7 +6,7 @@ import { socials } from "./icons";
 
 export default function Contact() {
     return (
-        <ContactStyled>
+        <ContactStyled id="contact">
             <Box
                 as="h2"
                 variant="title"

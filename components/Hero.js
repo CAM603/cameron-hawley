@@ -15,13 +15,11 @@ export default function Hero() {
                         _: "200px",
                         md: "250px",
                         lg: "300px",
-                        xl: "350px",
                     }}
                     height={{
                         _: "200px",
                         md: "250px",
                         lg: "300px",
-                        xl: "350px",
                     }}
                     as="div"
                 >

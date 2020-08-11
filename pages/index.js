@@ -10,14 +10,12 @@ import Contact from "../components/Contact";
 export default function Home() {
     return (
         <Layout>
-            <Box variant="container">
-                <Hero />
-                <div>
-                    <Projects />
-                    <Skills />
-                    <Contact />
-                </div>
-            </Box>
+            <Hero />
+            <div>
+                <Projects />
+                <Skills />
+                <Contact />
+            </div>
         </Layout>
     );
 }

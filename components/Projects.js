@@ -8,7 +8,7 @@ import projects from "../utils/projects";
 
 export default function Projects() {
     return (
-        <ProjectsStyled>
+        <ProjectsStyled id="projects">
             <Box
                 as="h2"
                 variant="title"

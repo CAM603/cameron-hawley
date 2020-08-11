@@ -1,6 +1,7 @@
 // Styles
 import styled from "@emotion/styled";
-import { Box, Flex } from "reflexbox";
+import { Flex } from "reflexbox";
+import Link from "next/link";
 
 export default function Navigation() {
     return (
@@ -10,13 +11,19 @@ export default function Navigation() {
                 justifyContent={{ _: "space-around", md: "flex-end" }}
             >
                 <li>
-                    <a href="/">About</a>
+                    <Link href="/about">
+                        <a>About</a>
+                    </Link>
                 </li>
                 <li>
-                    <a href="/">Contact</a>
+                    <Link href="/#contact">
+                        <a>Contact</a>
+                    </Link>
                 </li>
                 <li>
-                    <a href="/">Projects</a>
+                    <Link href="/#projects">
+                        <a>Projects</a>
+                    </Link>
                 </li>
             </Flex>
         </NavigationStyled>
