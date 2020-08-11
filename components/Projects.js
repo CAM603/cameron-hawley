@@ -16,13 +16,13 @@ export default function Projects() {
             >
                 Projects
             </Box>
-            <Flex flexDirection="column" alignItems="center">
+            <Flex justifyContent="space-around" flexWrap="wrap">
                 {projects.map((project) => (
                     <Box
                         key={project.name}
                         p={20}
                         variant="card"
-                        maxWidth="800px"
+                        maxWidth="500px"
                         width="100%"
                     >
                         <Card project={project} />

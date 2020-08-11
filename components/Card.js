@@ -13,14 +13,21 @@ export default function Card({ project }) {
     );
     return (
         <CardStyled>
-            <h3>{project.name}</h3>
-            <p>{project.description}</p>
+            <h3 className="name">{project.name}</h3>
+            <p className="description">{project.description}</p>
+            <div className="list">
+                <ul>
+                    {project.bullets.map((el) => (
+                        <li>{el}</li>
+                    ))}
+                </ul>
+            </div>
             <Box variant="project">
                 {backgroundImage}
                 <div className="links">
                     <Box
-                        width={{ _: "35px", md: "50px" }}
-                        height={{ _: "35px", md: "50px" }}
+                        width={{ _: "35px", md: "35px" }}
+                        height={{ _: "35px", md: "35px" }}
                         my={10}
                     >
                         <a href={project.github} target="_blank">
@@ -28,8 +35,8 @@ export default function Card({ project }) {
                         </a>
                     </Box>
                     <Box
-                        width={{ _: "35px", md: "50px" }}
-                        height={{ _: "35px", md: "50px" }}
+                        width={{ _: "35px", md: "35px" }}
+                        height={{ _: "35px", md: "35px" }}
                         my={10}
                     >
                         <a href={project.link} target="_blank">
@@ -56,15 +63,32 @@ export default function Card({ project }) {
 const CardStyled = styled.div`
     display: flex;
     flex-direction: column;
-    align-items: center;
 
-    h3 {
+    .name {
         font-size: 1.5rem;
         text-decoration: underline;
         margin-bottom: 20px;
         font-weight: bold;
         text-align: center;
     }
+    .description {
+        text-align: left;
+    }
+
+    .list {
+        width: 100%;
+        margin: 10px 0;
+
+        ul {
+            list-style-type: disc;
+            list-style-position: inside;
+
+            li {
+                line-height: 1.5;
+            }
+        }
+    }
+
     .image {
         background-position: center;
         background-size: cover;
@@ -96,6 +120,7 @@ const CardStyled = styled.div`
         align-items: center;
         width: 100%;
         border-top: 1px solid black;
+        padding-top: 10px;
     }
 
     .tool {

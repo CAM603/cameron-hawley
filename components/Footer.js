@@ -26,5 +26,6 @@ const FooterStyled = styled.footer`
     p {
         line-height: 1.5;
         text-align: center;
+        color: white;
     }
 `;

@@ -16,10 +16,8 @@ export default function Contact() {
             </Box>
             <div className="icons">
                 {socials.map((icon) => (
-                    <a href={icon.link} target="_blank">
-                        <Box key={icon.id} variant="iconContact">
-                            {icon.icon}
-                        </Box>
+                    <a key={icon.id} href={icon.link} target="_blank">
+                        <Box variant="iconContact">{icon.icon}</Box>
                     </a>
                 ))}
             </div>
