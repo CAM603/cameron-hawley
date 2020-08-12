@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import { Box, Flex } from "reflexbox";
-import { icons } from "./icons";
+import { icons } from "../utils/icons";
 
 export default function Skills() {
     return (

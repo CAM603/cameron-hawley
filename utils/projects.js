@@ -1,7 +1,7 @@
 const projects = [
     {
         name: "Vanilla Calculator",
-        image: "/images/calc.png",
+        image: "/images/projects/calc.png",
         description: "Calculator made with JavaScript, HTML, and CSS with LESS",
         bullets: [
             "Utilized CSS grid for design",
@@ -14,7 +14,7 @@ const projects = [
     },
     {
         name: "Game of Life",
-        image: "/images/life.png",
+        image: "/images/projects/life.png",
         description: "My interpretation of John Conway's Game of Life",
         bullets: [
             "React front end",
