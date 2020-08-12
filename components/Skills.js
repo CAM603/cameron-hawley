@@ -12,19 +12,14 @@ export default function Skills() {
             >
                 Core Technologies
             </Box>
-
             <Box width="90%" variant="card">
-                <Flex
-                    justifyContent="space-around"
-                    flexDirection={{ _: "row", md: "row" }}
-                    flexWrap="wrap"
-                >
+                <div className="icons">
                     {icons.map((icon) => (
                         <Box key={icon.id} variant="icon">
                             {icon.icon}
                         </Box>
                     ))}
-                </Flex>
+                </div>
             </Box>
         </SkillsStyled>
     );
@@ -34,4 +29,10 @@ const SkillsStyled = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    .icons {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
 `;

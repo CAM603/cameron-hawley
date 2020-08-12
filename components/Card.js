@@ -11,6 +11,7 @@ export default function Card({ project }) {
     ) : (
         <div className="no-image">In Development</div>
     );
+
     return (
         <CardStyled>
             <h3 className="name">{project.name}</h3>
@@ -25,34 +26,26 @@ export default function Card({ project }) {
             <Box variant="project">
                 {backgroundImage}
                 <div className="links">
-                    <Box
-                        width={{ _: "35px", md: "35px" }}
-                        height={{ _: "35px", md: "35px" }}
-                        my={10}
-                    >
+                    <div className="link">
                         <a href={project.github} target="_blank">
                             <img
                                 src="/images/icons/github.png"
                                 alt="github link"
                             />
                         </a>
-                    </Box>
-                    <Box
-                        width={{ _: "35px", md: "35px" }}
-                        height={{ _: "35px", md: "35px" }}
-                        my={10}
-                    >
+                    </div>
+                    <div className="link">
                         <a href={project.link} target="_blank">
                             <img
                                 src="/images/icons/link.png"
                                 alt="deployed link"
                             />
                         </a>
-                    </Box>
+                    </div>
                 </div>
             </Box>
             <Flex
-                className="toolbox"
+                className="tools"
                 flexDirection={{ _: "column", md: "row" }}
                 justifyContent={{ _: "center", md: "space-around" }}
             >
@@ -112,10 +105,12 @@ const CardStyled = styled.div`
         font-size: 2rem;
         background-color: grey;
     }
+
     img {
         width: 100%;
         height: 100%;
     }
+
     .links {
         display: flex;
         justify-content: space-between;
@@ -123,7 +118,13 @@ const CardStyled = styled.div`
         width: 50%;
     }
 
-    .toolbox {
+    .link {
+        width: 35px;
+        height: 35px;
+        margin: 10px 0;
+    }
+
+    .tools {
         align-items: center;
         width: 100%;
         border-top: 1px solid black;

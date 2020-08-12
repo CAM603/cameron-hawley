@@ -16,21 +16,21 @@ export default function Projects() {
             >
                 Projects
             </Box>
-            <Flex justifyContent="space-around" flexWrap="wrap">
+            <div className="projects">
                 {projects.map((project) => (
-                    <Box
-                        key={project.name}
-                        p={20}
-                        variant="card"
-                        maxWidth="500px"
-                        width="100%"
-                    >
+                    <Box key={project.name} variant="card" maxWidth="500px">
                         <Card project={project} />
                     </Box>
                 ))}
-            </Flex>
+            </div>
         </ProjectsStyled>
     );
 }
 
-const ProjectsStyled = styled.section``;
+const ProjectsStyled = styled.section`
+    .projects {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+`;

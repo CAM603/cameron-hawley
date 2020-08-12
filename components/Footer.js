@@ -3,7 +3,13 @@ import styled from "@emotion/styled";
 export default function Footer() {
     return (
         <FooterStyled>
-            <p>Created with Next.js by Cameron Hawley</p>
+            <p>
+                Created with{" "}
+                <a href="https://nextjs.org/" rel="external">
+                    Next.js
+                </a>{" "}
+                by Cameron Hawley
+            </p>
             <p>
                 Icons by{" "}
                 <a href="https://icons8.com/" target="_blank" rel="external">
@@ -26,5 +32,13 @@ const FooterStyled = styled.footer`
         line-height: 1.5;
         text-align: center;
         color: ${(props) => props.theme.colors.light};
+    }
+
+    a {
+        text-decoration: underline;
+        color: ${(props) => props.theme.colors.light};
+    }
+    a:hover {
+        color: ${(props) => props.theme.colors.accent};
     }
 `;

@@ -1,5 +1,3 @@
-// Styles
-import { Flex, Box } from "reflexbox";
 // Components
 import Layout from "../components/layout/layout";
 import Hero from "../components/Hero";
