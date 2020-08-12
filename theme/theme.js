@@ -19,7 +19,6 @@ export default {
             width: "100%",
             mx: "auto",
             px: 30,
-            background: "#eeeeee",
         },
         title: {
             fontSize: "2.2rem",
@@ -27,13 +26,17 @@ export default {
             fontWeight: "bold",
             margin: "20px 0",
             width: "100%",
+            color: "#222831",
         },
         card: {
             border: "solid black rgb(234, 234, 234)",
             borderRadius: "14px",
             margin: "20px 0",
-            boxShadow: "rgba(0, 0, 0, 0.15) 0px 2px 6px",
+            // boxShadow: "rgba(0, 0, 0, 0.15) 0px 2px 6px",
+            boxShadow:
+                "0 10px 15px -3px rgba(0,0,0,.1), 0 4px 6px -2px rgba(0,0,0,.05)",
             padding: "20px",
+            backgroundColor: "#ffffff",
         },
         icon: {
             width: "66px",

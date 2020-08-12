@@ -34,6 +34,7 @@ const HeaderStyled = styled.header`
     justify-content: center;
     align-items: center;
     padding: 0 20px;
+    border-bottom: 7px solid ${(props) => props.theme.colors.secondary};
 
     .container {
         width: 100%;

@@ -52,8 +52,11 @@ export default function Hero() {
                             <a>about me.</a>
                         </Link>
                     </p>
-                    <a href="mailto:cameronhawley@comcast.net">
-                        <button>Contact me</button>
+                    <a
+                        href="mailto:cameronhawley@comcast.net"
+                        className="button"
+                    >
+                        Contact me
                     </a>
                 </Box>
             </Flex>
@@ -64,6 +67,7 @@ export default function Hero() {
 const HeroStyled = styled.section`
     width: 100%;
     padding: 42px 0;
+    color: ${(props) => props.theme.colors.primary};
 
     img {
         border-radius: 14px;
@@ -73,12 +77,32 @@ const HeroStyled = styled.section`
     p {
         font-size: 1.2rem;
         line-height: 1.5;
+
+        a {
+            font-weight: bold;
+            text-decoration: underline;
+            color: ${(props) => props.theme.colors.secondary};
+        }
+        a:hover {
+            color: ${(props) => props.theme.colors.accent};
+        }
     }
-    button {
+
+    a.button {
         margin-top: 20px;
+        background-color: ${(props) => props.theme.colors.accent};
+        box-shadow: 0 4px 14px 0 rgba(8, 172, 181, 0.39);
+        color: white;
+        padding: 0.7rem 3rem;
+        border-radius: 10px;
+        min-width: 120px;
+        -webkit-appearance: button;
+        -moz-appearance: button;
+        appearance: button;
+        text-decoration: none;
     }
-    a {
-        font-weight: bold;
-        text-decoration: underline;
+    a.button:hover {
+        background: rgba(8, 172, 181, 0.9);
+        box-shadow: 0 6px 20px rgba(8, 172, 181, 0.23);
     }
 `;

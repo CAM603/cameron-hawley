@@ -63,6 +63,7 @@ export default function Card({ project }) {
 const CardStyled = styled.div`
     display: flex;
     flex-direction: column;
+    color: ${(props) => props.theme.colors.primary};
 
     .name {
         font-size: 1.5rem;
