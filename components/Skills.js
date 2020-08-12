@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import { Box, Flex } from "reflexbox";
-import { icons } from "./icons";
+import { icons } from "../utils/icons";
 
 export default function Skills() {
     return (
@@ -12,19 +12,14 @@ export default function Skills() {
             >
                 Core Technologies
             </Box>
-
             <Box width="90%" variant="card">
-                <Flex
-                    justifyContent="space-around"
-                    flexDirection={{ _: "row", md: "row" }}
-                    flexWrap="wrap"
-                >
+                <div className="icons">
                     {icons.map((icon) => (
                         <Box key={icon.id} variant="icon">
                             {icon.icon}
                         </Box>
                     ))}
-                </Flex>
+                </div>
             </Box>
         </SkillsStyled>
     );
@@ -34,4 +29,10 @@ const SkillsStyled = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    .icons {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
 `;

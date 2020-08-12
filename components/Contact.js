@@ -2,7 +2,7 @@
 import styled from "@emotion/styled";
 import { Box, Flex } from "reflexbox";
 // Assets
-import { socials } from "./icons";
+import { socials } from "../utils/icons";
 
 export default function Contact() {
     return (

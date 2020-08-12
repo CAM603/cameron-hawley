@@ -21,7 +21,6 @@ export default {
             px: 30,
         },
         title: {
-            fontSize: "2.2rem",
             borderBottom: "1px solid rgba(0, 0, 0, 0.15)",
             fontWeight: "bold",
             margin: "20px 0",
@@ -37,6 +36,7 @@ export default {
                 "0 10px 15px -3px rgba(0,0,0,.1), 0 4px 6px -2px rgba(0,0,0,.05)",
             padding: "20px",
             backgroundColor: "#ffffff",
+            width: "100%",
         },
         icon: {
             width: "66px",

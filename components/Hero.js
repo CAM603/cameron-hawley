@@ -28,13 +28,13 @@ export default function Hero() {
                 <Box
                     as="div"
                     my={20}
-                    pl={{ _: "0", md: "20px" }}
+                    pl={{ _: "0", md: "40px" }}
                     maxWidth="700px"
-                    width={{ _: "100%", md: "60%" }}
+                    width={{ _: "100%", md: "70%" }}
                 >
                     <Box as="h1" fontSize={{ _: "2rem", md: "2.6rem" }} mb={20}>
-                        Welcome! My name is Cameron Hawley. I'm a full stack web
-                        developer, open to work.
+                        Hello! My name is Cameron Hawley. I'm a Full Stack Web
+                        Developer, open to work.
                     </Box>
                     <p>
                         In October 2019 I was accepted to{" "}
@@ -76,11 +76,6 @@ const HeroStyled = styled.section`
         -webkit-border-radius: 14px;
         -moz-border-radius: 14px;
         border-radius: 14px;
-    }
-    img {
-        border-radius: 14px;
-        height: 100%;
-        width: 100%;
     }
 
     p {
