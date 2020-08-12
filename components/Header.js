@@ -41,6 +41,7 @@ const HeaderStyled = styled.header`
         h1 {
             font-size: 2rem;
             text-align: center;
+            color: white;
         }
     }
 `;

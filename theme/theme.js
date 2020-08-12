@@ -8,7 +8,7 @@ breakpoints.xxl = breakpoints[4];
 
 export default {
     colors: {
-        primary: "#2ECC71",
+        primary: "black",
         accent: "#000000",
     },
     variants: {
@@ -35,14 +35,13 @@ export default {
         icon: {
             width: "66px",
             height: "66px",
-            margin: "0 20px",
+            margin: "20px",
         },
         iconContact: {
             width: "44px",
             height: "44px",
         },
         project: {
-            margin: "20px 0",
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
