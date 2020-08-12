@@ -17,8 +17,8 @@ export default function Card({ project }) {
             <p className="description">{project.description}</p>
             <div className="list">
                 <ul>
-                    {project.bullets.map((el) => (
-                        <li>{el}</li>
+                    {project.bullets.map((el, index) => (
+                        <li key={index}>{el}</li>
                     ))}
                 </ul>
             </div>
@@ -31,7 +31,7 @@ export default function Card({ project }) {
                         my={10}
                     >
                         <a href={project.github} target="_blank">
-                            <img src="/images/github2.png" alt="github link" />
+                            <img src="/images/github.png" alt="github link" />
                         </a>
                     </Box>
                     <Box
@@ -40,7 +40,7 @@ export default function Card({ project }) {
                         my={10}
                     >
                         <a href={project.link} target="_blank">
-                            <img src="/images/link3.png" alt="deployed link" />
+                            <img src="/images/link.png" alt="deployed link" />
                         </a>
                     </Box>
                 </div>
@@ -63,6 +63,7 @@ export default function Card({ project }) {
 const CardStyled = styled.div`
     display: flex;
     flex-direction: column;
+    color: ${(props) => props.theme.colors.primary};
 
     .name {
         font-size: 1.5rem;

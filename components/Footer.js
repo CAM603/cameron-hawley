@@ -20,12 +20,11 @@ const FooterStyled = styled.footer`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
     padding: 30px 10px;
 
     p {
         line-height: 1.5;
         text-align: center;
-        color: white;
+        color: ${(props) => props.theme.colors.light};
     }
 `;

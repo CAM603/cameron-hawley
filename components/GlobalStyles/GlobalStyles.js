@@ -191,9 +191,11 @@ const GlobalStyles = () => (
                 body {
                     padding: 0;
                     margin: 0;
-                    font-family: -apple-system, BlinkMacSystemFont, Segoe UI,
+                    /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI,
                         Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
-                        Helvetica Neue, sans-serif;
+                        Helvetica Neue, sans-serif; */
+                    font-family: "Lato", sans-serif;
+                    background: #eeeeee;
                 }
                 *,
                 *::before,
@@ -249,7 +251,6 @@ const GlobalStyles = () => (
                     margin: 0;
                 }
                 button {
-                    border: 1px solid #ccc;
                     padding: 10px 25px;
                     border-radius: 10px;
                     min-width: 120px;

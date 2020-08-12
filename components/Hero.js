@@ -23,9 +23,8 @@ export default function Hero() {
                         lg: "300px",
                     }}
                     as="div"
-                >
-                    <img src="/images/profile.jpeg" alt="cameron" />
-                </Box>
+                    className="image"
+                ></Box>
                 <Box
                     as="div"
                     my={20}
@@ -52,8 +51,11 @@ export default function Hero() {
                             <a>about me.</a>
                         </Link>
                     </p>
-                    <a href="mailto:cameronhawley@comcast.net">
-                        <button>Contact me</button>
+                    <a
+                        href="mailto:cameronhawley@comcast.net"
+                        className="button"
+                    >
+                        Contact me
                     </a>
                 </Box>
             </Flex>
@@ -63,22 +65,53 @@ export default function Hero() {
 
 const HeroStyled = styled.section`
     width: 100%;
-    margin: 42px 0;
+    padding: 42px 0;
+    color: ${(props) => props.theme.colors.primary};
 
+    .image {
+        background-image: url("/images/cameron.jpeg");
+        background-size: cover;
+        background-position: 36% 0%;
+        background-repeat: no-repeat;
+        -webkit-border-radius: 14px;
+        -moz-border-radius: 14px;
+        border-radius: 14px;
+    }
     img {
         border-radius: 14px;
         height: 100%;
+        width: 100%;
     }
 
     p {
         font-size: 1.2rem;
         line-height: 1.5;
+
+        a {
+            font-weight: bold;
+            text-decoration: underline;
+            color: ${(props) => props.theme.colors.secondary};
+        }
+        a:hover {
+            color: ${(props) => props.theme.colors.accent};
+        }
     }
-    button {
+
+    a.button {
         margin-top: 20px;
+        background-color: ${(props) => props.theme.colors.accent};
+        box-shadow: 0 4px 14px 0 rgba(8, 172, 181, 0.39);
+        color: white;
+        padding: 0.7rem 3rem;
+        border-radius: 10px;
+        min-width: 120px;
+        -webkit-appearance: button;
+        -moz-appearance: button;
+        appearance: button;
+        text-decoration: none;
     }
-    a {
-        font-weight: bold;
-        text-decoration: underline;
+    a.button:hover {
+        background: rgba(8, 172, 181, 0.9);
+        box-shadow: 0 6px 20px rgba(8, 172, 181, 0.23);
     }
 `;
