@@ -63,7 +63,7 @@ export default function Hero() {
 
 const HeroStyled = styled.section`
     width: 100%;
-    margin: 42px 0;
+    padding: 42px 0;
 
     img {
         border-radius: 14px;

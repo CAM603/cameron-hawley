@@ -17,8 +17,8 @@ export default function Card({ project }) {
             <p className="description">{project.description}</p>
             <div className="list">
                 <ul>
-                    {project.bullets.map((el) => (
-                        <li>{el}</li>
+                    {project.bullets.map((el, index) => (
+                        <li key={index}>{el}</li>
                     ))}
                 </ul>
             </div>

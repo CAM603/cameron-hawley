@@ -8,8 +8,10 @@ breakpoints.xxl = breakpoints[4];
 
 export default {
     colors: {
-        primary: "black",
-        accent: "#000000",
+        primary: "#222831",
+        secondary: "#393e46",
+        accent: "#00adb5",
+        light: "#eeeeee",
     },
     variants: {
         container: {
@@ -17,6 +19,7 @@ export default {
             width: "100%",
             mx: "auto",
             px: 30,
+            background: "#eeeeee",
         },
         title: {
             fontSize: "2.2rem",

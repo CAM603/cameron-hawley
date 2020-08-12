@@ -16,7 +16,9 @@ export default function Header() {
             >
                 <Link href="/">
                     <a>
-                        <h1>Cameron Hawley</h1>
+                        <Box as="h1" fontSize={{ _: "1.8rem", md: "2rem" }}>
+                            Cameron Hawley
+                        </Box>
                     </a>
                 </Link>
                 <Navigation />
@@ -39,9 +41,8 @@ const HeaderStyled = styled.header`
         align-items: center;
 
         h1 {
-            font-size: 2rem;
             text-align: center;
-            color: white;
+            color: ${(props) => props.theme.colors.light};
         }
     }
 `;
