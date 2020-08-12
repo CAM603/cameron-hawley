@@ -26,7 +26,7 @@ const socials = [
         id: 1,
     },
     {
-        icon: <ImageStyled src="/images/github2.png" alt="github" />,
+        icon: <ImageStyled src="/images/github.png" alt="github" />,
         link: "https://github.com/CAM603",
         name: "GitHub",
         id: 2,

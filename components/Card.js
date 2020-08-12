@@ -31,7 +31,7 @@ export default function Card({ project }) {
                         my={10}
                     >
                         <a href={project.github} target="_blank">
-                            <img src="/images/github2.png" alt="github link" />
+                            <img src="/images/github.png" alt="github link" />
                         </a>
                     </Box>
                     <Box
@@ -40,7 +40,7 @@ export default function Card({ project }) {
                         my={10}
                     >
                         <a href={project.link} target="_blank">
-                            <img src="/images/link3.png" alt="deployed link" />
+                            <img src="/images/link.png" alt="deployed link" />
                         </a>
                     </Box>
                 </div>
