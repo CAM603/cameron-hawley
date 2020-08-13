@@ -1,7 +1,7 @@
 const projects = [
     {
         name: "React Native To Do",
-        image: "/images/projects/todo2.png",
+        image: "/images/projects/todo.png",
         description: "To do app made with React Native",
         bullets: [
             "Learned React Native",
