@@ -1,5 +1,18 @@
 const projects = [
     {
+        name: "React Native To Do",
+        image: "/images/projects/todo2.png",
+        description: "To do app made with React Native",
+        bullets: [
+            "Learned React Native",
+            "Implemented Dark Mode",
+            "SQLite database persists user data",
+        ],
+        github: "https://github.com/CAM603/goals-app",
+        link: "https://github.com/CAM603/goals-app",
+        tools: ["React Native", "JavaScript", "HTML", "CSS", "SQLite"],
+    },
+    {
         name: "Vanilla Calculator",
         image: "/images/projects/calc.png",
         description: "Calculator made with JavaScript, HTML, and CSS with LESS",
