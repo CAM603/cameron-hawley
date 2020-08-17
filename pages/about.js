@@ -46,6 +46,25 @@ export default function About() {
                     variant="title"
                     fontSize={{ _: "1.6rem", md: "2.2rem" }}
                 >
+                    About me
+                </Box>
+                <p>
+                    I am a thoughtful, self driven, and dedicated team player
+                    who gives my all to everything I do. I enjoy working with a
+                    team and also thrive when given individual assignments to
+                    complete on my own. I am passionate about developing and
+                    designing web applications, constantly iterating over
+                    previous releases as I learn and become a better developer.
+                    I am always thinking about how I can improve. I have strong
+                    communication skills, am detail oriented and have a positive
+                    attitude making me easy to work with.
+                </p>
+                <br />
+                <Box
+                    as="h2"
+                    variant="title"
+                    fontSize={{ _: "1.6rem", md: "2.2rem" }}
+                >
                     Present Day
                 </Box>
                 <p>
@@ -54,10 +73,10 @@ export default function About() {
                     Computer Science section of the curriculum while I look for
                     my first big role in a company as a Full Stack Web
                     Developer. Not only did Lambda School teach me how to write
-                    concise, resusable and professional code, I also learned how
+                    concise, reusable and professional code, I also learned how
                     to work in a fast paced, agile environment and how to work
                     cross-functionally with other Web Developers, UX/UI
-                    designers, and Data Scientisits.
+                    designers, and Data Scientists.
                 </p>
                 <br />
                 <Box
@@ -65,27 +84,7 @@ export default function About() {
                     variant="title"
                     fontSize={{ _: "1.6rem", md: "2.2rem" }}
                 >
-                    Title
-                </Box>
-                <p>
-                    I am a thoughful, self driven, and dedicated team player who
-                    gives my all to everything I do. I enjoy working working
-                    with a team and also thrive when given individual
-                    assignments to complete on my own. I am passionate about
-                    developing and designing web applications, consistantly
-                    iterating over previous releases as I learn and become a
-                    better developer. I am always thinking about how I can
-                    improve. I have strong communication skills, am detail
-                    oriented and have a positive attitude making me easy to work
-                    with.
-                </p>
-                <br />
-                <Box
-                    as="h2"
-                    variant="title"
-                    fontSize={{ _: "1.6rem", md: "2.2rem" }}
-                >
-                    Lambda School
+                    About Lambda School
                 </Box>
                 <p>
                     What I learned at Lambda Lambda School not only covers the
