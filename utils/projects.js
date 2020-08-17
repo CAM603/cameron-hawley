@@ -1,6 +1,6 @@
 const projects = [
     {
-        name: "State Watcher Back End",
+        name: "State Watcher - Back End",
         image: "/images/projects/backend.png",
         description:
             "Application designed to bring attention to local issues affecting states in the US",
@@ -14,8 +14,8 @@ const projects = [
         tools: ["Node", "JavaScript", "Jest", "PostgresSQL"],
     },
     {
-        name: "State Watcher Front End",
-        image: "/images/projects/statewatcher.png",
+        name: "State Watcher - Front End",
+        image: "/images/projects/statewatcher3.png",
         description:
             "Application designed to bring attention to local issues affecting states in the US",
         bullets: [
@@ -24,7 +24,7 @@ const projects = [
             "SCSS styling",
         ],
         github: "https://github.com/CAM603/state-watcher",
-        link: "https://github.com/CAM603/state-watcher",
+        link: "https://state-watcher.vercel.app/",
         tools: ["React Native", "JavaScript", "HTML", "CSS", "SQLite"],
     },
     {

@@ -77,7 +77,9 @@ const CardStyled = styled.div`
 
     .list {
         width: 100%;
-        margin: 10px 0;
+        margin-left: 1em;
+        margin-top: 10px;
+        margin-bottom: 10px;
 
         ul {
             list-style-type: disc;
@@ -85,13 +87,14 @@ const CardStyled = styled.div`
 
             li {
                 line-height: 1.5;
+                font-size: 0.9em;
             }
         }
     }
 
     .image {
         background-position: center;
-        background-size: cover;
+        background-size: contain;
         background-repeat: no-repeat;
         width: 100%;
         height: 300px;
