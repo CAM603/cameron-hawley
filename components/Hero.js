@@ -94,6 +94,7 @@ const HeroStyled = styled.section`
 
     a.button {
         margin-top: 20px;
+        display: inline-block;
         background-color: ${(props) => props.theme.colors.accent};
         box-shadow: 0 4px 14px 0 rgba(8, 172, 181, 0.39);
         color: white;
