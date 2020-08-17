@@ -30,7 +30,6 @@ const ContactStyled = styled.section`
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding-bottom: 20px;
 
     .icons {
         width: 100%;
