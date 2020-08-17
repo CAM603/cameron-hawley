@@ -19,6 +19,7 @@ export default {
             width: "100%",
             mx: "auto",
             px: 30,
+            marginBottom: "20px",
         },
         title: {
             borderBottom: "1px solid rgba(0, 0, 0, 0.15)",
