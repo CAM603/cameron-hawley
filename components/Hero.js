@@ -100,9 +100,7 @@ const HeroStyled = styled.section`
         padding: 0.7rem 3rem;
         border-radius: 10px;
         min-width: 120px;
-        -webkit-appearance: button;
-        -moz-appearance: button;
-        appearance: button;
+        -webkit-appearance: none;
         text-decoration: none;
     }
     a.button:hover {
