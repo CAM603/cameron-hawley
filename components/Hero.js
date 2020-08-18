@@ -45,8 +45,9 @@ export default function Hero() {
                             Lambda School's
                         </a>{" "}
                         Full Stack Web Development and Computer Science program.
-                        The following is a small collection of work that I
-                        completed during my time at Lambda. Read more{" "}
+                        The following is a brief overview of work I completed
+                        and technologies I learned during my time at Lambda
+                        School. Read more{" "}
                         <Link href="/about">
                             <a>about me.</a>
                         </Link>

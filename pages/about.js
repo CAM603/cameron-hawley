@@ -27,7 +27,6 @@ export default function About() {
                     for learning, problem solving, and that aligned with my
                     growth mindset.
                 </p>
-                <br />
                 <p>
                     When I discovered coding and decided to teach myself
                     JavaScript, I knew I had found exactly what I was looking
@@ -40,7 +39,6 @@ export default function About() {
                     curriculum and after the first couple months, I knew without
                     a doubt that I had found my niche in the world.
                 </p>
-                <br />
                 <Box
                     as="h2"
                     variant="title"
@@ -59,7 +57,6 @@ export default function About() {
                     communication skills, am detail oriented and have a positive
                     attitude making me easy to work with.
                 </p>
-                <br />
                 <Box
                     as="h2"
                     variant="title"
@@ -78,7 +75,6 @@ export default function About() {
                     cross-functionally with other Web Developers, UX/UI
                     designers, and Data Scientists.
                 </p>
-                <br />
                 <Box
                     as="h2"
                     variant="title"
@@ -92,10 +88,12 @@ export default function About() {
                     gave me the opportunity to apply my theoretical knowledge. I
                     learned by building real products and graduated with 1200
                     hours of coding experience, not including the countless
-                    hours I spent coding before and after hours.
+                    hours I spent coding outside before and after class. Below
+                    is a brief overview of what I learned while at Lambda
+                    School.
                 </p>
                 <div className="lambda">
-                    <h3>Web Foundations</h3>
+                    <h3>Unit 1: Web Foundations</h3>
                     <ul>
                         <li>HTML</li>
                         <li>CSS</li>
@@ -103,7 +101,7 @@ export default function About() {
                         <li>UI principles</li>
                         <li>GitHub</li>
                     </ul>
-                    <h3>Web Application Development</h3>
+                    <h3>Unit 2: Web Application Development</h3>
                     <ul>
                         <li>React</li>
                         <li>Redux</li>
@@ -111,13 +109,13 @@ export default function About() {
                         <li>HTTP/AJAX</li>
                         <li>Functional programming techniques</li>
                     </ul>
-                    <h3>Advanced Web Development</h3>
+                    <h3>Unit 3: Advanced Web Development</h3>
                     <ul>
                         <li>Advanced React</li>
                         <li>Advanced state management</li>
                         <li>Testing</li>
                     </ul>
-                    <h3>Back End Development</h3>
+                    <h3>Unit 4: Back End Development</h3>
                     <ul>
                         <li>Node.js</li>
                         <li>Web APIs</li>
@@ -125,7 +123,7 @@ export default function About() {
                         <li>Authentication</li>
                         <li>Testing</li>
                     </ul>
-                    <h3>Computer Science</h3>
+                    <h3>Unit 5: Computer Science</h3>
                     <ul>
                         <li>Python</li>
                         <li>Object oriented programming</li>
@@ -135,7 +133,7 @@ export default function About() {
                         <li>Graphs</li>
                         <li>Computer Architecture</li>
                     </ul>
-                    <h3>Labs</h3>
+                    <h3>Unit 6: Labs</h3>
                     <ul>
                         <li>Apprenticeship</li>
                         <li>Build a real world application</li>
@@ -155,7 +153,7 @@ const AboutStyled = styled.section`
 
     h1 {
         font-size: 3rem;
-        padding: 20px 0;
+        padding-top: 20px;
         font-weight: bold;
         color: ${(props) => props.theme.colors.primary};
     }
@@ -163,7 +161,6 @@ const AboutStyled = styled.section`
     p {
         font-size: 1.2rem;
         padding: 20px 0;
-        max-width: 1000px;
         line-height: 1.5;
     }
 
@@ -177,6 +174,8 @@ const AboutStyled = styled.section`
             font-size: 1.4rem;
             margin-top: 20px;
             margin-bottom: 10px;
+            font-weight: bold;
+            ${(props) => props.theme.colors.primary}
         }
 
         ul {

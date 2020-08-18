@@ -5,8 +5,8 @@ const projects = [
         description:
             "Application designed to bring attention to local issues affecting states in the US",
         bullets: [
-            "Implemented multiple users that can interact with one another",
-            "Jest testing throughout",
+            "Created user authentication and authorization",
+            "Integrated Jest testing throughout",
             "Deployed to Heroku with PostgresSQL",
         ],
         github: "https://github.com/Co-make-bw/back-end",
@@ -19,9 +19,9 @@ const projects = [
         description:
             "Application designed to bring attention to local issues affecting states in the US",
         bullets: [
-            "Second iteration of the front end",
-            "Redux state management",
-            "SCSS styling",
+            "Revamped front end architect and design",
+            "Converted state management to use Redux",
+            "Updated styling to use SCSS",
         ],
         github: "https://github.com/CAM603/state-watcher",
         link: "https://state-watcher.vercel.app/",
@@ -30,11 +30,11 @@ const projects = [
     {
         name: "React Native To Do",
         image: "/images/projects/todo.png",
-        description: "To do app made with React Native",
+        description: "Implemented to do app with React Native",
         bullets: [
-            "Learned React Native",
-            "Implemented Dark Mode",
-            "SQLite database persists user data",
+            "Optimized for IOS and Android devices",
+            "Released Dark Mode feature",
+            "Secured data persistence using SQLite database",
         ],
         github: "https://github.com/CAM603/goals-app",
         link: "https://github.com/CAM603/goals-app",
@@ -43,11 +43,12 @@ const projects = [
     {
         name: "Vanilla Calculator",
         image: "/images/projects/calc.png",
-        description: "Calculator made with JavaScript, HTML, and CSS with LESS",
+        description:
+            "Constructed calculator with JavaScript, HTML, and CSS/LESS",
         bullets: [
+            "Assembled with pure JavaScript, HTML, and CSS",
             "Utilized CSS grid for design",
-            "DOM manipulation practice",
-            "JavaScript functions to perform calculations",
+            "Coded DOM manipulation using JavaScript",
         ],
         github: "https://github.com/CAM603/Calculator",
         link: "https://cam603.github.io/Calculator/",
@@ -56,11 +57,11 @@ const projects = [
     {
         name: "Game of Life",
         image: "/images/projects/life.png",
-        description: "My interpretation of John Conway's Game of Life",
+        description: "Re-engineered John Conway's Game of Life with React",
         bullets: [
-            "React front end",
-            "Algorithm determines rules of life",
-            "Fully responsive",
+            "Constructed game using React",
+            "Systematized algorithm following the rules of life",
+            "Integrated responsive styling for mobile and desktop",
         ],
         github: "https://github.com/CAM603/game-of-life",
         link: "https://game-of-life-black.vercel.app/",
@@ -72,9 +73,9 @@ const projects = [
         description:
             "Developing a full stack website for marketing company to establish new branding",
         bullets: [
-            "Next.js front end",
-            "CMS back end using Strapi",
-            "Search engine optimized",
+            "Assembled front end using Next.js",
+            "Constructed CMS back end using Strapi",
+            "Prioritized search engine optimized",
         ],
         github: "href",
         link: "href",
