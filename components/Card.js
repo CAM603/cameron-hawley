@@ -137,5 +137,6 @@ const CardStyled = styled.div`
     .tool {
         font-weight: bold;
         line-height: 1.5;
+        color: ${(props) => props.theme.colors.primary};
     }
 `;
