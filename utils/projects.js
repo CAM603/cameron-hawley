@@ -41,6 +41,19 @@ const projects = [
         tools: ["React Native", "JavaScript", "HTML", "CSS", "SQLite"],
     },
     {
+        name: "Game of Life",
+        image: "/images/projects/life.png",
+        description: "Re-engineered John Conway's Game of Life with React",
+        bullets: [
+            "Constructed game using React",
+            "Systematized algorithm following the rules of life",
+            "Integrated responsive styling for mobile and desktop",
+        ],
+        github: "https://github.com/CAM603/game-of-life",
+        link: "https://game-of-life-black.vercel.app/",
+        tools: ["JavaScript", "SCSS", "React"],
+    },
+    {
         name: "Vanilla Calculator",
         image: "/images/projects/calc.png",
         description:
@@ -53,19 +66,6 @@ const projects = [
         github: "https://github.com/CAM603/Calculator",
         link: "https://cam603.github.io/Calculator/",
         tools: ["JavaScript", "HTML", "CSS", "LESS"],
-    },
-    {
-        name: "Game of Life",
-        image: "/images/projects/life.png",
-        description: "Re-engineered John Conway's Game of Life with React",
-        bullets: [
-            "Constructed game using React",
-            "Systematized algorithm following the rules of life",
-            "Integrated responsive styling for mobile and desktop",
-        ],
-        github: "https://github.com/CAM603/game-of-life",
-        link: "https://game-of-life-black.vercel.app/",
-        tools: ["JavaScript", "SCSS", "React"],
     },
     {
         name: "Hawley Communications",
