@@ -17,29 +17,32 @@ export default function About() {
                     Overview
                 </Box>
                 <p>
-                    I'm Cameron Hawley, a Full Stack Web Developer, Team Lead
+                    I'm Cameron Hawley, a Full Stack Web Developer, Team Lead,
                     and recent graduate of Lambda School. In 2016 I graduated
-                    from the University of New Hampshire with a Bachelors of
-                    Arts degree in Psychology. Prior to and after that, I spent
+                    from the University of New Hampshire with a Bachelor of Arts
+                    degree in Psychology. Prior to and after that, I spent
                     several years in various customer service and sales
                     positions. In early 2019 I sought out a major career change,
                     looking for something that would allow me to utilize my
-                    creativity, love for learning, problem solving, and that
+                    creativity, love for learning, problem-solving, and that
                     aligned with my growth mindset.
                 </p>
                 <p>
-                    When I discovered coding and decided to teach myself
-                    JavaScript, I knew I had found exactly what I was looking
-                    for. It allowed me to be creative, artistic, think
-                    critically, problem solve and most importantly provides a
-                    continuous pipeline of education. Seeing my progression in
-                    such a short amount of time gave me the inspiration and
-                    confidence to apply to Lambda School. I was accepted to
-                    their Full Stack Web Development and Computer Science
-                    curriculum and after the first couple months, I knew without
-                    a doubt that I had found my niche in the world. I am looking
-                    forward to joining a company with diverse forward thinkers
-                    who share my passions and work ethic.{" "}
+                    When I discovered coding and decided to teach myself basic
+                    JavaScript, HTML, and CSS, I knew I had found exactly what I
+                    was looking for. I heard about Lambda School, an intensive
+                    7+ month accelerated program with an immersive (full-time,
+                    40+ hours/week) hands-on curriculum with a focus on computer
+                    science, software engineering, and web development. I
+                    applied, took their precourse screening material, and was
+                    accepted. After the first couple of months, I knew without a
+                    doubt that I found my niche in the world. Coding allows me
+                    to be creative, artistic, think critically, problem-solve,
+                    and most importantly provides me with a continuous pipeline
+                    of education and learning. Now I am solving difficult code
+                    challenges, building full-stack websites, and learning every
+                    day. I am looking forward to joining a company with diverse
+                    forward thinkers who share my passions and work ethic.{" "}
                     <a href="mailto:cameronhawley@comcast.net">Contact me</a>.
                 </p>
                 <Box
@@ -50,17 +53,19 @@ export default function About() {
                     Who am I?
                 </Box>
                 <p>
-                    I am a thoughtful, self driven, and dedicated team player
+                    I am a thoughtful, self-driven, and dedicated team player
                     who gives my all to everything I do. I enjoy working with a
                     team and also thrive when given individual assignments to
                     complete on my own. I am passionate about developing and
-                    designing web applications, constantly iterating over
-                    previous releases as I learn and become a better developer.
-                    I am always thinking about how I can improve. I have strong
-                    communication skills, am detail oriented and have a positive
-                    attitude making me easy to work with. When not at my
-                    computer, you can either find me on a long walk with my
-                    Labradoodle Cooper, or on an equally long drive in my 1995
+                    designing beautiful and fully responsive web applications.
+                    None of my projects are considered done, I am constantly
+                    thinking of improvements while iterating over previous
+                    releases as I learn and become a better developer.
+                    Progression drives me and gives me confidence. I have strong
+                    communication skills, am detail-oriented, and have a
+                    positive attitude making me easy to work with. When not at
+                    my computer, you can either find me on a long walk with my
+                    Labradoodle Cooper or on an equally long drive in my 1995
                     Mazda Miata.
                 </p>
                 <Box
@@ -76,14 +81,9 @@ export default function About() {
                     Full Stack Web Developer. In the meantime, I work full time
                     as a Team Lead for students in the Computer Science section
                     of the curriculum. I am responsible for mentoring 9 students
-                    through the curriculum, delivering 1 on 1 feedback and
+                    through the curriculum, delivering 1 on 1 feedback, and
                     hosting daily stand up meetings. Twice a week I host "Before
-                    Hours" for any students seeking help. Not only did Lambda
-                    School teach me how to write concise, reusable and
-                    professional code, I also learned how to work in a fast
-                    paced, agile environment and how to work cross-functionally
-                    with other Web Developers, UX/UI designers, and Data
-                    Scientists.
+                    Hours" for any students seeking help.
                 </p>
                 <Box
                     as="h2"
@@ -95,13 +95,27 @@ export default function About() {
                 <p>
                     What I learned at Lambda School not only covers the
                     fundamentals of computer science and web development, it
-                    gave me the opportunity to apply my theoretical knowledge. I
-                    learned by building real products and graduated with 1200
-                    hours of coding experience, not including the countless
-                    hours I spent coding outside before and after class. Check
-                    out my <a href="https://github.com/CAM603">GitHub</a>{" "}
+                    gave me the opportunity to apply my theoretical knowledge.
+                    Not only did Lambda School teach me how to write concise,
+                    reusable, and professional code, I also learned how to work
+                    in a fast-paced, agile environment and how to work
+                    cross-functionally with other Web Developers, UX/UI
+                    designers, and Data Scientists. I learned by building real
+                    products and graduated with 1200 hours of coding experience,
+                    not including the countless hours I spent coding before and
+                    after hours. Check out my{" "}
+                    <a href="https://github.com/CAM603" target="_blank">
+                        GitHub
+                    </a>{" "}
                     contributions. Below is a brief overview of what I learned
-                    while at Lambda School.
+                    while at{" "}
+                    <a
+                        href="https://lambdaschool.com/courses/full-stack-web-development"
+                        target="_blank"
+                    >
+                        Lambda School
+                    </a>
+                    .
                 </p>
                 <div className="lambda">
                     <h3>Unit 1: Web Foundations</h3>

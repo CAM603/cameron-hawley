@@ -18,7 +18,6 @@ export default {
             maxWidth: 1200,
             width: "100%",
             mx: "auto",
-            // px: 30,
             marginBottom: "20px",
         },
         title: {
@@ -31,7 +30,7 @@ export default {
         card: {
             border: "solid black rgb(234, 234, 234)",
             borderRadius: "14px",
-            margin: "20px 0",
+            margin: "20px 2px",
             boxShadow:
                 "0 10px 15px -3px rgba(0,0,0,.1), 0 4px 6px -2px rgba(0,0,0,.05)",
             padding: "20px",

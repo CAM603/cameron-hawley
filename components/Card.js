@@ -76,10 +76,7 @@ const CardStyled = styled.div`
     }
 
     .list {
-        width: 100%;
-        margin-left: 1em;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        margin: 1em;
 
         ul {
             list-style-type: disc;
@@ -98,7 +95,12 @@ const CardStyled = styled.div`
         background-repeat: no-repeat;
         width: 100%;
         height: 300px;
+
+        @media (max-width: 400px) {
+            height: 200px;
+        }
     }
+
     .no-image {
         width: 100%;
         height: 300px;
@@ -106,7 +108,8 @@ const CardStyled = styled.div`
         justify-content: center;
         align-items: center;
         font-size: 2rem;
-        background-color: grey;
+        color: ${(props) => props.theme.colors.accent};
+        background-color: ${(props) => props.theme.colors.primary};
     }
 
     img {
