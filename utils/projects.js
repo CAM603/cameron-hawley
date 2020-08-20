@@ -3,7 +3,7 @@ const projects = [
         name: "State Watcher - Back End",
         image: "/images/projects/backend.png",
         description:
-            "Application designed to bring attention to local issues affecting states in the United States",
+            "Collaborated on a cross-functional team of developers as the sole back end engineer",
         bullets: [
             "Created user authentication and authorization",
             "Integrated Jest testing throughout",
@@ -17,7 +17,7 @@ const projects = [
         name: "State Watcher - Front End",
         image: "/images/projects/statewatcher3.png",
         description:
-            "Application designed to bring attention to local issues affecting states in the United States",
+            "Constructed and designed an application that brings attention to local issues affecting states in the United States",
         bullets: [
             "Revamped front end architect and design",
             "Converted state management to use Redux",
@@ -30,7 +30,8 @@ const projects = [
     {
         name: "React Native To Do",
         image: "/images/projects/todo.png",
-        description: "Implemented to do app with React Native",
+        description:
+            "Implemented a robust to do app with React Native to work offline and save data",
         bullets: [
             "Optimized for IOS and Android devices",
             "Released Dark Mode feature",
@@ -56,8 +57,7 @@ const projects = [
     {
         name: "Vanilla Calculator",
         image: "/images/projects/calc.png",
-        description:
-            "Constructed calculator with JavaScript, HTML, and CSS/LESS",
+        description: "Constructed and designed a unique calculator",
         bullets: [
             "Assembled with pure JavaScript, HTML, and CSS",
             "Utilized CSS grid for design",
