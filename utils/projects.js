@@ -3,7 +3,7 @@ const projects = [
         name: "State Watcher - Back End",
         image: "/images/projects/backend.png",
         description:
-            "Application designed to bring attention to local issues affecting states in the US",
+            "Application designed to bring attention to local issues affecting states in the United States",
         bullets: [
             "Created user authentication and authorization",
             "Integrated Jest testing throughout",
@@ -17,7 +17,7 @@ const projects = [
         name: "State Watcher - Front End",
         image: "/images/projects/statewatcher3.png",
         description:
-            "Application designed to bring attention to local issues affecting states in the US",
+            "Application designed to bring attention to local issues affecting states in the United States",
         bullets: [
             "Revamped front end architect and design",
             "Converted state management to use Redux",
