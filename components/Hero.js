@@ -33,30 +33,25 @@ export default function Hero() {
                     width={{ _: "100%", md: "70%" }}
                 >
                     <Box as="h1" fontSize={{ _: "2rem", md: "2.6rem" }} mb={20}>
-                        Hello! My name is Cameron Hawley. I'm a Full Stack Web
-                        Developer, open to work.
+                        Hello! My name is Cameron Hawley. I'm an avid software
+                        engineer, open to work.
                     </Box>
                     <p>
-                        In October 2019 I was accepted to{" "}
-                        <a
-                            href="https://lambdaschool.com/courses/full-stack-web-development"
-                            target="_blank"
-                        >
-                            Lambda School's
-                        </a>{" "}
-                        Full Stack Web Development and Computer Science program.
-                        The following is a brief overview of work I completed
-                        and technologies I learned during my time at Lambda
-                        School. Read more about me{" "}
-                        <Link href="/about">
-                            <a>here.</a>
-                        </Link>
+                        I study full stack web development, specializing in
+                        JavaScript, React, Node, React Native and Python.
                     </p>
                     <a
                         href="mailto:cameronhawley@comcast.net"
                         className="button"
                     >
                         Contact me
+                    </a>
+                    <a
+                        href="https://drive.google.com/file/d/1YxeIYjLzRB0Tk_HWg09SZ7CbVqpdHG6x/view?usp=sharing"
+                        target="_blank"
+                        className="button"
+                    >
+                        Resume
                     </a>
                 </Box>
             </Flex>
@@ -95,15 +90,17 @@ const HeroStyled = styled.section`
 
     a.button {
         margin-top: 20px;
+        margin-right: 20px;
         display: inline-block;
         background-color: ${(props) => props.theme.colors.accent};
         box-shadow: 0 4px 14px 0 rgba(8, 172, 181, 0.39);
         color: white;
         padding: 0.7rem 3rem;
         border-radius: 10px;
-        min-width: 120px;
+        width: 180px;
         -webkit-appearance: none;
         text-decoration: none;
+        text-align: center;
     }
     a.button:hover {
         background: rgba(8, 172, 181, 0.9);

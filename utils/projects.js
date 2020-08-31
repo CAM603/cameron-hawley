@@ -44,7 +44,7 @@ const projects = [
     {
         name: "Game of Life",
         image: "/images/projects/life.png",
-        description: "Re-engineered John Conway's Game of Life with React",
+        description: "Re-engineered John Conway's Game of Life",
         bullets: [
             "Constructed game using React",
             "Systematized algorithm following the rules of life",
