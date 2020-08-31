@@ -7,6 +7,7 @@ export default function Card({ project }) {
         <div
             className="image"
             style={{ backgroundImage: `url(${project.image})` }}
+            title="Preview image of project"
         ></div>
     ) : (
         <div className="no-image">In Development</div>

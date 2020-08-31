@@ -24,6 +24,7 @@ export default function Hero() {
                     }}
                     as="div"
                     className="image"
+                    title="Picture of Cameron"
                 ></Box>
                 <Box
                     as="div"
@@ -51,7 +52,7 @@ export default function Hero() {
                         target="_blank"
                         className="button"
                     >
-                        Resume
+                        My resume
                     </a>
                 </Box>
             </Flex>
