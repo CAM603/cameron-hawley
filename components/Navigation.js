@@ -42,6 +42,10 @@ const NavigationStyled = styled.nav`
             margin-left: 15px;
             font-size: 1.5rem;
             color: ${(props) => props.theme.colors.light};
+
+            @media (max-width: 360px) {
+                margin-top: 5px;
+            }
         }
     }
 `;
