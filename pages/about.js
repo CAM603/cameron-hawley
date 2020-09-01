@@ -9,6 +9,12 @@ export default function About() {
         <Layout>
             <AboutStyled>
                 <h1>About</h1>
+                {/* <div className="image">
+                    <img
+                        src="/images/cameron.jpeg"
+                        alt="Funny picture of Cameron"
+                    />
+                </div> */}
                 <Box
                     as="h2"
                     variant="title"
@@ -176,9 +182,21 @@ const AboutStyled = styled.section`
     align-items: center;
     flex-direction: column;
 
+    /* .image {
+        width: 80%;
+        max-width: 500px;
+
+        img {
+            -webkit-border-radius: 14px;
+            -moz-border-radius: 14px;
+            border-radius: 14px;
+            width: 100%;
+        }
+    } */
+
     h1 {
         font-size: 3rem;
-        padding-top: 20px;
+        padding: 20px 0;
         font-weight: bold;
         color: ${(props) => props.theme.colors.primary};
     }
@@ -187,11 +205,17 @@ const AboutStyled = styled.section`
         font-size: 1.2rem;
         padding: 20px 0;
         line-height: 1.5;
+        color: ${(props) => props.theme.colors.primary};
     }
 
     a {
         font-weight: bold;
         color: ${(props) => props.theme.colors.accent};
+        text-decoration: underline;
+    }
+
+    a:hover {
+        color: ${(props) => props.theme.colors.secondary};
     }
 
     .lambda {

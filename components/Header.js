@@ -12,7 +12,7 @@ export default function Header() {
                 className="container"
                 flexDirection={{ _: "column", sm: "row" }}
                 justifyContent={{ _: "space-between", md: "space-between" }}
-                height={{ _: "70px", sm: "60px" }}
+                // height={{ _: "70px", sm: "60px" }}
             >
                 <Link href="/">
                     <a>
@@ -33,8 +33,8 @@ const HeaderStyled = styled.header`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 20px;
-    border-bottom: 5px solid ${(props) => props.theme.colors.accent};
+    padding: 10px 20px;
+    border-bottom: 4px solid ${(props) => props.theme.colors.accent};
 
     .container {
         width: 100%;
