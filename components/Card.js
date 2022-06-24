@@ -4,11 +4,11 @@ import { Box, Flex } from "reflexbox";
 
 export default function Card({ project }) {
     const backgroundImage = project.image ? (
-        <div
+        <ImageStyled
             className="image"
             style={{ backgroundImage: `url(${project.image})` }}
             title="Preview image of project"
-        ></div>
+        ></ImageStyled>
     ) : (
         <div className="no-image">In Development</div>
     );
@@ -59,6 +59,10 @@ export default function Card({ project }) {
         </CardStyled>
     );
 }
+
+const ImageStyled = styled.div`
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+`;
 
 const CardStyled = styled.div`
     display: flex;
