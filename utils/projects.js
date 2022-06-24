@@ -1,5 +1,19 @@
 const projects = [
     {
+        name: "Hawley Communications",
+        image: "/images/projects/hawley-communications.png",
+        description:
+            "Developed website for a Public Relations company to establish new branding",
+        bullets: [
+            "Assembled front end using Next.js",
+            "Constructed CMS back end using Strapi",
+            "Prioritized search engine optimized"
+        ],
+        github: "href",
+        link: "href",
+        tools: ["JavaScript", "React", "CSS", "Next", "Node"]
+    },
+    {
         name: "State Watcher - Back End",
         image: "/images/projects/backend.png",
         description:
@@ -7,11 +21,11 @@ const projects = [
         bullets: [
             "Created user authentication and authorization",
             "Integrated Jest testing throughout",
-            "Deployed to Heroku with PostgresSQL",
+            "Deployed to Heroku with PostgresSQL"
         ],
         github: "https://github.com/Co-make-bw/back-end",
         link: "https://github.com/Co-make-bw/back-end",
-        tools: ["Node", "JavaScript", "Jest", "PostgresSQL"],
+        tools: ["Node", "JavaScript", "Jest", "PostgresSQL"]
     },
     {
         name: "State Watcher - Front End",
@@ -21,11 +35,11 @@ const projects = [
         bullets: [
             "Revamped front end architect and design",
             "Converted state management to use Redux",
-            "Updated styling to use SCSS",
+            "Updated styling to use SCSS"
         ],
         github: "https://github.com/CAM603/state-watcher",
         link: "https://state-watcher.vercel.app/",
-        tools: ["React Native", "JavaScript", "HTML", "CSS", "SQLite"],
+        tools: ["React Native", "JavaScript", "HTML", "CSS", "SQLite"]
     },
     {
         name: "React Native To Do",
@@ -35,11 +49,11 @@ const projects = [
         bullets: [
             "Optimized for IOS and Android devices",
             "Released Dark Mode feature",
-            "Secured data persistence using SQLite database",
+            "Secured data persistence using SQLite database"
         ],
         github: "https://github.com/CAM603/goals-app",
         link: "https://github.com/CAM603/goals-app",
-        tools: ["React Native", "JavaScript", "HTML", "CSS", "SQLite"],
+        tools: ["React Native", "JavaScript", "HTML", "CSS", "SQLite"]
     },
     {
         name: "Game of Life",
@@ -48,11 +62,11 @@ const projects = [
         bullets: [
             "Constructed game using React",
             "Systematized algorithm following the rules of life",
-            "Integrated responsive styling for mobile and desktop",
+            "Integrated responsive styling for mobile and desktop"
         ],
         github: "https://github.com/CAM603/game-of-life",
         link: "https://game-of-life-black.vercel.app/",
-        tools: ["JavaScript", "SCSS", "React"],
+        tools: ["JavaScript", "SCSS", "React"]
     },
     {
         name: "Vanilla Calculator",
@@ -61,26 +75,12 @@ const projects = [
         bullets: [
             "Assembled with pure JavaScript, HTML, and CSS",
             "Utilized CSS grid for design",
-            "Coded DOM manipulation using JavaScript",
+            "Coded DOM manipulation using JavaScript"
         ],
         github: "https://github.com/CAM603/Calculator",
         link: "https://cam603.github.io/Calculator/",
-        tools: ["JavaScript", "HTML", "CSS", "LESS"],
-    },
-    {
-        name: "Hawley Communications",
-        image: null,
-        description:
-            "Developing a full stack website for marketing company to establish new branding",
-        bullets: [
-            "Assembled front end using Next.js",
-            "Constructed CMS back end using Strapi",
-            "Prioritized search engine optimized",
-        ],
-        github: "href",
-        link: "href",
-        tools: ["JavaScript", "React", "CSS", "Next", "Node"],
-    },
+        tools: ["JavaScript", "HTML", "CSS", "LESS"]
+    }
 ];
 
 export default projects;

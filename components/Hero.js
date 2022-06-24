@@ -15,12 +15,12 @@ export default function Hero() {
                     width={{
                         _: "200px",
                         md: "250px",
-                        lg: "300px",
+                        lg: "300px"
                     }}
                     height={{
                         _: "200px",
                         md: "250px",
-                        lg: "300px",
+                        lg: "300px"
                     }}
                     as="div"
                     className="image"
@@ -34,12 +34,12 @@ export default function Hero() {
                     width={{ _: "100%", md: "70%" }}
                 >
                     <Box as="h1" fontSize={{ _: "2rem", md: "2.6rem" }} mb={20}>
-                        Hello! My name is Cameron Hawley. I'm an avid software
-                        engineer, open to work.
+                        My name is Cameron Hawley. I'm an avid software
+                        engineer.
                     </Box>
                     <p>
-                        I study full stack web development, specializing in
-                        JavaScript, React, Node, React Native and Python.
+                        I've been developing at Space Ground System Solutions
+                        since 2020.
                     </p>
                     <a
                         href="mailto:cameronhawley@comcast.net"

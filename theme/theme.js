@@ -11,21 +11,21 @@ export default {
         primary: "#222831",
         secondary: "#393e46",
         accent: "#00adb5",
-        light: "#eeeeee",
+        light: "#eeeeee"
     },
     variants: {
         container: {
             maxWidth: 1200,
             width: "100%",
             mx: "auto",
-            marginBottom: "20px",
+            marginBottom: "20px"
         },
         title: {
             borderBottom: "1px solid rgba(0, 0, 0, 0.15)",
             fontWeight: "bold",
             margin: "20px 0",
             width: "100%",
-            color: "#222831",
+            color: "#222831"
         },
         card: {
             border: "solid black rgb(234, 234, 234)",
@@ -34,24 +34,24 @@ export default {
             boxShadow:
                 "0 10px 15px -3px rgba(0,0,0,.1), 0 4px 6px -2px rgba(0,0,0,.05)",
             padding: "20px",
-            backgroundColor: "#ffffff",
-            width: "100%",
+            backgroundColor: "white",
+            width: "100%"
         },
         icon: {
             width: "66px",
             height: "66px",
-            margin: "20px",
+            margin: "20px"
         },
         iconContact: {
             width: "44px",
-            height: "44px",
+            height: "44px"
         },
         project: {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            width: "100%",
-        },
+            width: "100%"
+        }
     },
-    breakpoints,
+    breakpoints
 };
