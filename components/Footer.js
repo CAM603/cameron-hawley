@@ -1,8 +1,13 @@
 import styled from "@emotion/styled";
+import { useContext } from "react";
+
+import { ThemeContext } from "../pages/_app";
 
 export default function Footer() {
+    const { colorTheme } = useContext(ThemeContext);
+
     return (
-        <FooterStyled>
+        <FooterStyled colorTheme={colorTheme}>
             <p>
                 Created with{" "}
                 <a href="https://nextjs.org/" rel="external">
@@ -21,7 +26,7 @@ export default function Footer() {
 }
 
 const FooterStyled = styled.footer`
-    background-color: ${(props) => props.theme.colors.primary};
+    background-color: ${(props) => props.theme[props.colorTheme].primary};
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -31,14 +36,14 @@ const FooterStyled = styled.footer`
     p {
         line-height: 1.5;
         text-align: center;
-        color: ${(props) => props.theme.colors.light};
+        color: ${(props) => props.theme[props.colorTheme].light};
     }
 
     a {
         text-decoration: underline;
-        color: ${(props) => props.theme.colors.light};
+        color: ${(props) => props.theme[props.colorTheme].light};
     }
     a:hover {
-        color: ${(props) => props.theme.colors.accent};
+        color: ${(props) => props.theme[props.colorTheme].accent};
     }
 `;

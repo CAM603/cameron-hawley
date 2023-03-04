@@ -1,13 +1,16 @@
-// Styles
 import styled from "@emotion/styled";
-// Components
-import Layout from "../components/layout/layout";
 import { Box } from "reflexbox";
+import { useContext } from "react";
+
+import Layout from "../components/layout/layout";
+import { ThemeContext } from "./_app";
 
 export default function About() {
+    const { colorTheme } = useContext(ThemeContext);
+
     return (
         <Layout>
-            <AboutStyled>
+            <AboutStyled colorTheme={colorTheme}>
                 <h1>About</h1>
                 {/* <div className="image">
                     <img
@@ -15,110 +18,58 @@ export default function About() {
                         alt="Funny picture of Cameron"
                     />
                 </div> */}
-                <Box
-                    as="h2"
-                    variant="title"
-                    fontSize={{ _: "1.6rem", md: "2.2rem" }}
-                >
+                <Box as="h2" variant="title" fontSize={{ _: "1.6rem", md: "2.2rem" }}>
                     Overview
                 </Box>
                 <p>
-                    I'm Cameron Hawley, a Full Stack Web Developer, Team Lead,
-                    and recent graduate of Lambda School. In 2016 I graduated
-                    from the University of New Hampshire with a Bachelor of Arts
-                    degree in Psychology. Prior to and after that, I spent
-                    several years in various customer service and sales
-                    positions. In early 2019 I sought out a major career change,
-                    looking for something that would allow me to utilize my
-                    creativity, love for learning, problem-solving, and that
-                    aligned with my growth mindset.
+                    I'm Cameron Hawley, a Full Stack Web Developer, Team Lead, and recent graduate of Lambda School. In 2016 I graduated from the University of
+                    New Hampshire with a Bachelor of Arts degree in Psychology. Prior to and after that, I spent several years in various customer service and
+                    sales positions. In early 2019 I sought out a major career change, looking for something that would allow me to utilize my creativity, love
+                    for learning, problem-solving, and that aligned with my growth mindset.
                 </p>
                 <p>
-                    When I discovered coding and decided to teach myself basic
-                    JavaScript, HTML, and CSS, I knew I had found exactly what I
-                    was looking for. I heard about Lambda School, an intensive
-                    7+ month accelerated program with an immersive (full-time,
-                    40+ hours/week) hands-on curriculum with a focus on computer
-                    science, software engineering, and web development. I
-                    applied, took their precourse screening material, and was
-                    accepted. After the first couple of months, I knew without a
-                    doubt that I found my niche in the world. Coding allows me
-                    to be creative, artistic, think critically, problem-solve,
-                    and most importantly provides me with a continuous pipeline
-                    of education and learning. Now I am solving difficult code
-                    challenges, building full-stack websites, and learning every
-                    day. I am looking forward to joining a company with diverse
-                    forward thinkers who share my passions and work ethic.{" "}
-                    <a href="mailto:cameronhawley@comcast.net">Contact me</a>.
+                    When I discovered coding and decided to teach myself basic JavaScript, HTML, and CSS, I knew I had found exactly what I was looking for. I
+                    heard about Lambda School, an intensive 7+ month accelerated program with an immersive (full-time, 40+ hours/week) hands-on curriculum with
+                    a focus on computer science, software engineering, and web development. I applied, took their precourse screening material, and was
+                    accepted. After the first couple of months, I knew without a doubt that I found my niche in the world. Coding allows me to be creative,
+                    artistic, think critically, problem-solve, and most importantly provides me with a continuous pipeline of education and learning. Now I am
+                    solving difficult code challenges, building full-stack websites, and learning every day. I am looking forward to joining a company with
+                    diverse forward thinkers who share my passions and work ethic. <a href="mailto:cameronhawley@comcast.net">Contact me</a>.
                 </p>
-                <Box
-                    as="h2"
-                    variant="title"
-                    fontSize={{ _: "1.6rem", md: "2.2rem" }}
-                >
+                <Box as="h2" variant="title" fontSize={{ _: "1.6rem", md: "2.2rem" }}>
                     Who am I?
                 </Box>
                 <p>
-                    I am a thoughtful, self-driven, and dedicated team player
-                    who gives my all to everything I do. I enjoy working with a
-                    team and also thrive when given individual assignments to
-                    complete on my own. I am passionate about developing and
-                    designing beautiful and fully responsive web applications.
-                    None of my projects are considered done, I am constantly
-                    thinking of improvements while iterating over previous
-                    releases as I learn and become a better developer.
-                    Progression drives me and gives me confidence. I have strong
-                    communication skills, am detail-oriented, and have a
-                    positive attitude making me easy to work with. When not at
-                    my computer, you can either find me on a long walk with my
-                    Labradoodle Cooper or on an equally long drive in my 1995
-                    Mazda Miata.
+                    I am a thoughtful, self-driven, and dedicated team player who gives my all to everything I do. I enjoy working with a team and also thrive
+                    when given individual assignments to complete on my own. I am passionate about developing and designing beautiful and fully responsive web
+                    applications. None of my projects are considered done, I am constantly thinking of improvements while iterating over previous releases as I
+                    learn and become a better developer. Progression drives me and gives me confidence. I have strong communication skills, am detail-oriented,
+                    and have a positive attitude making me easy to work with. When not at my computer, you can either find me on a long walk with my Labradoodle
+                    Cooper or on an equally long drive in my 1995 Mazda Miata.
                 </p>
-                <Box
-                    as="h2"
-                    variant="title"
-                    fontSize={{ _: "1.6rem", md: "2.2rem" }}
-                >
+                <Box as="h2" variant="title" fontSize={{ _: "1.6rem", md: "2.2rem" }}>
                     What now?
                 </Box>
                 <p>
-                    Fast forward to now, I am fully endorsed by Lambda School
-                    and currently seeking my first big role in a company as a
-                    Full Stack Web Developer. In the meantime, I work full time
-                    as a Team Lead for students in the Computer Science section
-                    of the curriculum. I am responsible for mentoring 9 students
-                    through the curriculum, delivering 1 on 1 feedback, and
-                    hosting daily stand up meetings. Twice a week I host "Before
-                    Hours" for any students seeking help.
+                    Fast forward to now, I am fully endorsed by Lambda School and currently seeking my first big role in a company as a Full Stack Web
+                    Developer. In the meantime, I work full time as a Team Lead for students in the Computer Science section of the curriculum. I am responsible
+                    for mentoring 9 students through the curriculum, delivering 1 on 1 feedback, and hosting daily stand up meetings. Twice a week I host
+                    "Before Hours" for any students seeking help.
                 </p>
-                <Box
-                    as="h2"
-                    variant="title"
-                    fontSize={{ _: "1.6rem", md: "2.2rem" }}
-                >
+                <Box as="h2" variant="title" fontSize={{ _: "1.6rem", md: "2.2rem" }}>
                     Why Lambda School?
                 </Box>
                 <p>
-                    What I learned at Lambda School not only covers the
-                    fundamentals of computer science and web development, it
-                    gave me the opportunity to apply my theoretical knowledge.
-                    Not only did Lambda School teach me how to write concise,
-                    reusable, and professional code, I also learned how to work
-                    in a fast-paced, agile environment and how to work
-                    cross-functionally with other Web Developers, UX/UI
-                    designers, and Data Scientists. I learned by building real
-                    products and graduated with 1200 hours of coding experience,
-                    not including the countless hours I spent coding before and
-                    after hours. Check out my{" "}
+                    What I learned at Lambda School not only covers the fundamentals of computer science and web development, it gave me the opportunity to
+                    apply my theoretical knowledge. Not only did Lambda School teach me how to write concise, reusable, and professional code, I also learned
+                    how to work in a fast-paced, agile environment and how to work cross-functionally with other Web Developers, UX/UI designers, and Data
+                    Scientists. I learned by building real products and graduated with 1200 hours of coding experience, not including the countless hours I
+                    spent coding before and after hours. Check out my{" "}
                     <a href="https://github.com/CAM603" target="_blank">
                         GitHub
                     </a>{" "}
-                    contributions. Below is a brief overview of what I learned
-                    while at{" "}
-                    <a
-                        href="https://lambdaschool.com/courses/full-stack-web-development"
-                        target="_blank"
-                    >
+                    contributions. Below is a brief overview of what I learned while at{" "}
+                    <a href="https://lambdaschool.com/courses/full-stack-web-development" target="_blank">
                         Lambda School
                     </a>
                     .
@@ -198,24 +149,25 @@ const AboutStyled = styled.section`
         font-size: 3rem;
         padding: 20px 0;
         font-weight: bold;
-        color: ${(props) => props.theme.colors.primary};
+        color: ${(props) => props.theme[props.colorTheme].text};
+    }
+
+    h2 {
+        color: ${(props) => props.theme[props.colorTheme].text};
+        border-bottom: 1px solid ${(props) => props.theme[props.colorTheme].accent};
     }
 
     p {
         font-size: 1.2rem;
         padding: 20px 0;
         line-height: 1.5;
-        color: ${(props) => props.theme.colors.primary};
+        color: ${(props) => props.theme[props.colorTheme].text};
     }
 
     a {
         font-weight: bold;
-        color: ${(props) => props.theme.colors.accent};
+        color: ${(props) => props.theme[props.colorTheme].accent};
         text-decoration: underline;
-    }
-
-    a:hover {
-        color: ${(props) => props.theme.colors.secondary};
     }
 
     .lambda {
@@ -223,13 +175,13 @@ const AboutStyled = styled.section`
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        color: ${(props) => props.theme[props.colorTheme].text};
 
         h3 {
             font-size: 1.4rem;
             margin-top: 20px;
             margin-bottom: 10px;
             font-weight: bold;
-            ${(props) => props.theme.colors.primary}
         }
 
         ul {

@@ -1,18 +1,25 @@
-// Styles
-import GlobalStyles from "../components/GlobalStyles/GlobalStyles";
 import { ThemeProvider } from "emotion-theming";
-import theme from "../theme/theme";
-// SEO
 import { DefaultSeo } from "next-seo";
+import { createContext, useState } from "react";
+
+import GlobalStyles from "../components/GlobalStyles/GlobalStyles";
+import theme from "../theme/theme";
 import SEO from "../next-seo.config";
 
+export const ThemeContext = createContext({ colorTheme: "light", setColorTheme: () => {} });
+
 function MyApp({ Component, pageProps }) {
+    const [colorTheme, setColorTheme] = useState("light");
+    const value = { colorTheme, setColorTheme };
+
     return (
         <>
             <DefaultSeo {...SEO} />
             <ThemeProvider theme={theme}>
                 <GlobalStyles />
-                <Component {...pageProps} />
+                <ThemeContext.Provider value={value}>
+                    <Component {...pageProps} />
+                </ThemeContext.Provider>
             </ThemeProvider>
         </>
     );

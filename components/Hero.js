@@ -1,16 +1,16 @@
 // Styles
 import styled from "@emotion/styled";
 import { Flex, Box } from "reflexbox";
-import Link from "next/link";
+import { useContext } from "react";
+
+import { ThemeContext } from "../pages/_app";
 
 export default function Hero() {
+    const { colorTheme } = useContext(ThemeContext);
+
     return (
-        <HeroStyled>
-            <Flex
-                justifyContent="space-between"
-                alignItems={{ _: "flex-start", md: "center" }}
-                flexDirection={{ _: "column", md: "row" }}
-            >
+        <HeroStyled colorTheme={colorTheme}>
+            <Flex justifyContent="space-between" alignItems={{ _: "flex-start", md: "center" }} flexDirection={{ _: "column", md: "row" }}>
                 <Box
                     width={{
                         _: "200px",
@@ -26,32 +26,14 @@ export default function Hero() {
                     className="image"
                     title="Picture of Cameron"
                 ></Box>
-                <Box
-                    as="div"
-                    my={20}
-                    pl={{ _: "0", md: "40px" }}
-                    maxWidth="700px"
-                    width={{ _: "100%", md: "70%" }}
-                >
+                <Box as="div" my={20} pl={{ _: "0", md: "40px" }} maxWidth="700px" width={{ _: "100%", md: "70%" }}>
                     <Box as="h1" fontSize={{ _: "2rem", md: "2.6rem" }} mb={20}>
-                        My name is Cameron Hawley. I'm an avid software
-                        engineer.
+                        Providing simple solutions to complex problems
                     </Box>
-                    <p>
-                        I've been developing at Space Ground System Solutions
-                        since 2020.
-                    </p>
-                    <a
-                        href="mailto:cameronhawley@comcast.net"
-                        className="button"
-                    >
+                    <a href="mailto:cameronhawley@comcast.net" className="button">
                         Contact me
                     </a>
-                    <a
-                        href="https://drive.google.com/file/d/1YxeIYjLzRB0Tk_HWg09SZ7CbVqpdHG6x/view?usp=sharing"
-                        target="_blank"
-                        className="button"
-                    >
+                    <a href="https://drive.google.com/file/d/1YxeIYjLzRB0Tk_HWg09SZ7CbVqpdHG6x/view?usp=sharing" target="_blank" className="button">
                         My resume
                     </a>
                 </Box>
@@ -63,7 +45,7 @@ export default function Hero() {
 const HeroStyled = styled.section`
     width: 100%;
     padding: 42px 0;
-    color: ${(props) => props.theme.colors.primary};
+    color: ${(props) => props.theme[props.colorTheme].text};
 
     .image {
         background-image: url("/images/cameron.jpeg");
@@ -82,10 +64,10 @@ const HeroStyled = styled.section`
         a {
             font-weight: bold;
             text-decoration: underline;
-            color: ${(props) => props.theme.colors.secondary};
+            color: ${(props) => props.theme[props.colorTheme].secondary};
         }
         a:hover {
-            color: ${(props) => props.theme.colors.accent};
+            color: ${(props) => props.theme[props.colorTheme].accent};
         }
     }
 
@@ -93,9 +75,9 @@ const HeroStyled = styled.section`
         margin-top: 20px;
         margin-right: 20px;
         display: inline-block;
-        background-color: ${(props) => props.theme.colors.accent};
+        background-color: ${(props) => props.theme[props.colorTheme].accent};
         box-shadow: 0 4px 14px 0 rgba(8, 172, 181, 0.39);
-        color: white;
+        color: ${(props) => props.theme[props.colorTheme].secondary};
         padding: 0.7rem 3rem;
         border-radius: 10px;
         width: 180px;
@@ -104,7 +86,7 @@ const HeroStyled = styled.section`
         text-align: center;
     }
     a.button:hover {
-        background: rgba(8, 172, 181, 0.9);
-        box-shadow: 0 6px 20px rgba(8, 172, 181, 0.23);
+        background: ${(props) => props.theme[props.colorTheme].hover};
+        box-shadow: ${(props) => props.theme[props.colorTheme].shadow};
     }
 `;
