@@ -1,4 +1,3 @@
-// Components
 import Layout from "../components/layout/layout";
 import Hero from "../components/Hero";
 import Skills from "../components/Skills";
